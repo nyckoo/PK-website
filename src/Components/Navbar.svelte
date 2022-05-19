@@ -93,47 +93,49 @@ window.addEventListener('scroll', (ev) => {
     id="navbar"
   >
     <div class="container">
-      <a class="navbar-brand" href={"#"}>Globing</a>
+      <a class="navbar-brand" href={""}>Najpierw Ja</a>
 
-      <Button class="navbar-toggler" on:click={toggleMenu}>
-        <span class="ti-menu" />
-      </Button>
+      <ul class="list-inline mb-0" id="navbarIconsCollapsed">
+        <li class="list-inline-item">
+          <!-- Shopping cart button -->
+          <Button class="navbar-toggler" href={"koszyk"}>
+            <span class="ti-shopping-cart" />
+          </Button>
+        </li>
+
+        <li class="list-inline-item">
+          <!-- Menu button -->
+          <Button class="navbar-toggler" on:click={toggleMenu}>
+            <span class="ti-menu" />
+          </Button>
+        </li>
+      </ul>
 
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mx-auto" id="navbar-navlist">
           <li class="nav-item">
-            <a class="nav-link" use:scrollto={"#home"} href={"#home"}>Home</a>
+            <a class="nav-link" use:scrollto={"#home"} href={"#about"}>O mnie</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" use:scrollto={"#services"} href={"#services"}>Services</a>
+            <a class="nav-link" use:scrollto={"#ebooks"} href={"#ebooks"}>E-booki</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" use:scrollto={"#features"} href={"#features"}>Features</a>
+            <a class="nav-link" use:scrollto={"#coaching"} href={"#coaching"}>Coaching</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" use:scrollto={"#testi"} href={"#testi"}>Client</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" use:scrollto={"#team"} href={"#team"}>Team</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" use:scrollto={"#faq"} href={"#faq"}>FAQ</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" use:scrollto={"#pricing"} href={"#pricing"}>Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" use:scrollto={"#contact"} href={"#contact"}>Contact</a>
+            <a class="nav-link" use:scrollto={"#contact"} href={"#contact"}>Kontakt</a>
           </li>
         </ul>
         <!-- end ul -->
         <div>
           <ul class="text-end list-unstyled list-inline mb-0 nav-social">
+            <!--
             <li class="list-inline-item text-white nav-number">
               <i class="ti-mobile" /> <span>+1 234 567 789</span>
             </li>
+            -->
             <li class="list-inline-item">
-              <a href={"#"} class="facebook"><i class="ti-facebook" /></a>
+              <a href={"koszyk"} class="shopping-cart"><i class="ti-shopping-cart" /></a>
             </li>
           </ul>
           <!-- end ul -->

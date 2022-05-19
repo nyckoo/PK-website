@@ -2,13 +2,10 @@
   import { Form, Row, Col, Input, Container } from 'sveltestrap'
   export let contactData = {}
   let {
-    heading,
-    boldheading,
     description,
-    customercare,
-    officeaddress,
-    emailaddress,
-    officetime
+    email_address,
+    phone_nr,
+    instagram
   } = contactData
 </script>
 
@@ -18,7 +15,7 @@
       <Col lg={12}>
         <i class="ti-headphone-alt title-icon text-muted" />
         <h3 class="title">
-          {heading} <span class="fw-bold">{boldheading}</span>
+          <span class="fw-bold">Kontakt</span>
         </h3>
         <p class="text-muted mt-3 title-subtitle mx-auto">
           {description}
@@ -31,20 +28,16 @@
       <Col lg={4}>
         <div class="mt-4 pt-4">
           <p class="text-muted mt-4">
-            <span class="fw-bold ">Customer care:</span><br />
-            <span class="d-block mt-2">{customercare}</span>
+            <span class="fw-bold ">Adres e-mail:</span><br />
+            <span class="d-block mt-2">{email_address}</span>
           </p>
           <p class="text-muted mt-4">
-            <span class="fw-bold ">Office Address:</span><br />
-            <span class="d-block mt-2">{officeaddress}</span>
+            <span class="fw-bold ">Nr telefonu:</span><br />
+            <span class="d-block mt-2">{phone_nr}</span>
           </p>
           <p class="text-muted mt-4">
-            <span class="fw-bold ">Email Address:</span><br />
-            <span class="d-block mt-2">{emailaddress}</span>
-          </p>
-          <p class="text-muted mt-4">
-            <span class="fw-bold ">Office Time:</span><br />
-            <span class="d-block mt-2">{officetime}</span>
+            <span class="fw-bold ">Instagram:</span><br />
+            <span class="d-block mt-2">{instagram}</span>
           </p>
         </div>
       </Col>
