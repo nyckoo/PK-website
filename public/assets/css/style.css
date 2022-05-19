@@ -1325,7 +1325,7 @@ b {
   text-transform: capitalize;
   transition: all 0.5s;
   background-color: transparent !important;
-  margin: 0 7px;
+  margin: 0 15px;
   letter-spacing: 0.05em;
 }
 

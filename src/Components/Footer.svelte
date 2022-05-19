@@ -75,7 +75,7 @@
         </div>
         <div class="mt-4 pt-2 text-center">
           <p class="copy-rights text-muted mb-0">
-            {new Date().getFullYear()} © Globing. Design by Themesbrand
+            {new Date().getFullYear()} © Najpierw Ja
           </p>
         </div>
       </Col>
@@ -86,11 +86,11 @@
 </section>
 <!-- Back to top -->
 
-<Link to={"#"} class="back-to-top" id="back-to-top" on:click={scrollTop}>
+<Link to={""} class="back-to-top" id="back-to-top" on:click={scrollTop}>
   <i class="ti-angle-up" /></Link
 >
 
-<!-- Style switcher -->
+<!-- Style switcher
 <div id="style-switcher" style="left: {isSwitchToggle ? '0px' : '-189px'}">
   <div>
     <h3>Select your color</h3>
@@ -121,4 +121,4 @@
     >
   </div>
 </div>
-<!-- end Style switcher -->
+ end Style switcher -->

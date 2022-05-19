@@ -1,6 +1,6 @@
 <script>
     import Navbar from '../../Components/Navbar.svelte'
-    import HomeSection from './HomeSection.svelte'
+    import HomeSection from '../Layout1/HomeSection.svelte'
     import Service from '../../Components/Service.svelte'
     import Feature from '../../Components/Feature.svelte'
     import Testimonial from '../../Components/Testimonial.svelte'
@@ -9,45 +9,36 @@
     import Pricing from '../../Components/Pricing.svelte'
     import Contact from '../../Components/Contact.svelte'
     import Footer from '../../Components/Footer.svelte'
+    import About from '../../Components/About.svelte';
+    import Ebooks from '../../Components/Ebooks.svelte';
+    import Coaching from '../../Components/Coaching.svelte';
   
     import data from '../../Data/data'
   
   </script>
   
   <!-- STRAT NAVBAR -->
-    <Navbar extraclass="" />
+  <Navbar extraclass="" />
   <!-- END NAVBAR -->
   
   <!-- START HOME -->
-  <HomeSection />
+  <HomeSection homeData={data.HOME_DATA} />
   <!-- END HOME -->
+
+  <!-- START ABOUT -->
+  <About aboutData={data.ABOUT_DATA} />
+  <!-- END ABOUT -->
+
+  <!-- START ABOUT -->
+  <Ebooks ebooksData={data.EBOOKS_DATA} />
+  <!-- END ABOUT -->
   
-  <!-- START SERVICES -->
-  <Service serviceData={data.SERVICE_DATA} />
-  <!-- END SERVICES -->
-  
-  <!-- START FETURES -->
-  <Feature featureData={data.FEATURES_DATA} />
-  <!-- END FEATURES -->
-  
-  <!-- STRAT TESTIMONIAL -->
-  <Testimonial testimonialData={data.TESATIMONIAL_DATA} />
-  <!-- END TESTIMONIAL -->
-  
-  <!-- START TEAM-->
-  <Team teamData={data.TEAM_DATA} />
-  <!-- END TEAM -->
-  
-  <!-- START TEAM -->
-  <Faq faqData={data.FAQDATA} ctaData={data.CTA_SECTION} />
-  <!-- END TEAM -->
-  
-  <!-- START PRICING -->
-  <Pricing pricingData={data.PRICING_DATA} />
-  <!-- END PRICING -->
+  <!-- START ABOUT -->
+  <Coaching coachingData={data.COACHING_DATA} />
+  <!-- END ABOUT -->
   
   <!-- CONTACT FORM START-->
-  <Contact contactData={data.CONTACTDATA} />
+  <Contact contactData={data.CONTACT_DATA} />
   <!-- CONTACT FORM END-->
   
   <!-- STRT FOOTER -->
