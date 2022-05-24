@@ -1,15 +1,15 @@
 <script>
     import { Container, Row, Col } from 'sveltestrap'
+    import Data from '../Data/data'
 
-    export let coachingData = {}
-    const { questions, answers } = coachingData
+    const { questions, answers } = Data.COACHING_DATA
 </script>
   
 <section class="section bg-light text-center" id="coaching">
   <Container>
     <Row class="justify-content-center">
       <Col lg={12}>
-        <i class="ti-comments title-icon text-muted" />
+        <i class="fa-solid fa-people-group title-icon text-dark" />
         <h3 class="title">
           <span class="fw-bold">Coaching</span>
         </h3>
@@ -27,21 +27,65 @@
           <div class="ps-4 pe-4">
               <div class="mt-4">
                 <div>
-                  <h5 class="mb-0 f-18 font-weight-600">
+                  <h5 class="mb-0 f-20 font-weight-600">
                     {questions[0]}
                   </h5>
                 </div>
-                <div class="mt-4">
+                <div class="mt-4 p-4">
                   <p class="text-muted text-center">
                     {answers[0].text}
                   </p>
                 </div>
-                <div class="mt-4">
-                    <p class="text-muted text-center">
-                      {answers[0].u_list}
-                    </p>
+                <div class="container">
+                  <div class="row justify-content-center">
+                    <div class="col-sm-4">
+                      {#each answers[0].u_list as item}
+                      <p class="text-muted text-center max">
+                        • {item}
+                      </p>
+                      {/each}
+                    </div>
+                  </div>
                 </div>
               </div>
+          </div>
+        </Col>
+        <!-- Q. 2 -->
+        <Col lg={12}>
+          <div class="ps-4 pe-4">
+              <div class="mt-4">
+                <div>
+                  <h5 class="mb-0 f-20 font-weight-600">
+                    {questions[1]}
+                  </h5>
+                </div>
+                <div class="mt-4">
+                  <p class="text-muted text-center">
+                    {answers[1].text_one}
+                  </p>
+                </div>
+                <div class="container">
+                  <div class="row justify-content-center">
+                    <div class="col-sm-4">
+                      {#each answers[1].u_list as item}
+                      <p class="text-muted text-center max">
+                        • {item}
+                      </p>
+                      {/each}
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-4">
+                  <p class="text-muted text-center">
+                    {answers[1].text_two}
+                  </p>
+                </div>
+                <div class="mt-4">
+                  <p class="text-muted text-center">
+                    {answers[1].offer}
+                  </p>
+                </div>
+            </div>
           </div>
         </Col>
         <!-- Q. 3 -->
@@ -49,15 +93,17 @@
             <div class="ps-4 pe-4">
                 <div class="mt-4">
                   <div>
-                    <h5 class="mb-0 f-18 font-weight-600">
+                    <h5 class="mb-0 f-20 font-weight-600">
                       {questions[2]}
                     </h5>
                   </div>
-                  <div class="mt-4">
-                    <p class="text-muted text-center">
-                      {answers[2].text}
-                    </p>
-                  </div>
+                  {#each answers[2].u_list as item}
+                    <div class="mt-3">
+                      <p class="text-muted">
+                        {item}
+                      </p>
+                    </div>
+                  {/each}
                 </div>
             </div>
           </Col>

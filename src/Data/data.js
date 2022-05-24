@@ -4,35 +4,17 @@ const HOME_DATA = {
 
 const ABOUT_DATA = {
     pretext: "Kim jestem:",
-    text_one: `Cześć! Nazywam się Paweł Kowalski.
-    Większość osób kojarzy mnie z social mediów, pod pseudonimem “najpierw ja”. W internecie oraz w życiu prywatnym, określam siebie jako osobę szczęśliwą i otwartą na rozmowę. To mój naturalny talent - potrafię każdego dnia poznać kogoś nowego i szczerze się nim zainteresować. Na tym też buduję swoją markę - uwielbiam poznawać drugiego człowieka takim, jakim jest, bez oceniania go, ponieważ rozumiem, że każdy ma swoje indywidualne wartości i potrzeby.\n
+    text_list: [`Cześć! Nazywam się Paweł Kowalski.
+    Większość osób kojarzy mnie z social mediów, pod pseudonimem “najpierw ja”. W internecie oraz w życiu prywatnym, określam siebie jako osobę szczęśliwą i otwartą na rozmowę. To mój naturalny talent - potrafię każdego dnia poznać kogoś nowego i szczerze się nim zainteresować. Na tym też buduję swoją markę - uwielbiam poznawać drugiego człowieka takim, jakim jest, bez oceniania go, ponieważ rozumiem, że każdy ma swoje indywidualne wartości i potrzeby.`,
     
-    Od kiedy założyłem profil @najpierw_ja, codziennie rozmawiam z ludźmi i dzielę się wiedzą na temat kochania siebie, relacji partnerskich, drogi do szczęścia, pewności siebie i spraw biznesowych - to moje główne tematy, w których rozwijam się od lat (nie tylko teoretycznie, ale przede wszystkim sprawdzam je w praktyce) i nie zamierzam przestać.\n
+    `Od kiedy założyłem profil @najpierw_ja, codziennie dzielę się wiedzą na temat kochania siebie, relacji partnerskich, drogi do szczęścia, pewności siebie i spraw biznesowych - to moje główne tematy, w których edukuję się od lat (nie tylko teoretycznie, ale przede wszystkim sprawdzam je w praktyce) i nie zamierzam przestać.`,
     
-    Jak to się stało, że robię to, co robię? Czasem mam wrażenie, że to nie ja wybrałem tę ścieżkę życia, a to ta ścieżka życia wybrała mnie - bo wszystko co robię, jest związane z moimi pasjami. Zaczęło się lata temu, od zwykłych wyjść na kawę i szczerego dzielenia wnioskami o życiu, nie ukrywając ani pozytywnych, ani negatywnych myśli (dalej zdarza mi się tak spędzać czas). Ludzie, z którymi się spotykałem, mówili mi, że taka rozmowa bardzo im pomaga i powinienem pomyśleć o psychologii, coachingu lub jakiejś innej formie pracy, w której miałbym kontakt z klientem 1na1. Na początku przyjmowałem to jako komplement, lecz z czasem zacząłem rozumieć, że to jest coś, czym bardzo chcę się zajmować.
+    `Jak to się stało, że robię to, co robię? Czasem mam wrażenie, że to nie ja wybrałem tę ścieżkę życia, a to ta ścieżka życia wybrała mnie - bo wszystko co robię, jest związane z moimi pasjami. Zaczęło się lata temu, od zwykłych wyjść na kawę i szczerego dzielenia wnioskami o życiu, nie ukrywając ani pozytywnych, ani negatywnych myśli (dalej zdarza mi się tak spędzać czas). Ludzie, z którymi się spotykałem, mówili mi, że taka rozmowa bardzo im pomaga i powinienem pomyśleć o psychologii, coachingu lub jakiejś innej formie pracy, w której miałbym kontakt z klientem 1na1. Na początku przyjmowałem to tylko jako komplement, lecz z czasem zacząłem rozumieć, że to jest coś, czym bardzo chcę się zajmować.`,
     
-    Zatem najpierw spotykałem się z ludźmi twarzą w twarz, następnie przeniosłem się na instagram, gdzie rozmowy nie wyglądały tak samo, ponieważ najczęściej pisały do mnie osoby z jakimiś nierozwiązanymi sprawami, z prośbami o podpowiedź, albo bezpośrednio zadawały pytania typu: “jak pokochać siebie”, “jak stać się pewną siebie osobą?” lub “jak zwiększyć poczucie własnej wartości?”.
+    `Instagram stał się nowym miejscem spotkań, a wraz z rozwojem profilu, kontaktowało się ze mną coraz więcej osób. Była to dla mnie dobra wiadomość, ale dzień nadal miał tylko 24 godziny, więc zaczynało brakować czasu. Mając pracę, pasję, znajomych - stanąłem przed ważnym wyborem: “albo ograniczam relacje z obserwatorami i zajmuję się rozwojem życia prywatnego, albo wchodzę w to całym sobą”. Jak się domyślasz – wybrałem opcję drugą, dlatego powstała ta strona. By bardziej rozwinąć swoje umiejętności komunikacyjne i nieść profesjonalną pomoc, ukończyłem kilka kursów w tym kierunku oraz zdobyłem tytuł: “Meritum Certified Coach”. Dzięki temu, na co dzień prowadzę sesje online, na których z pomocą narzędzi psychologicznych, przechodzę z klientami przez ważne dla nich tematy życiowe (tkz. life coaching).`,
     
-    Wraz z rozwojem profilu, kontaktowało się ze mną coraz więcej osób, a dzień nadal miał tylko 24 godziny. Mając pracę, pasję, znajomych - stanąłem przed ważnym wyborem: “albo ograniczam relacje z obserwatorami i zajmuję się rozwojem życia prywatnego, albo wchodzę w to całym sobą”. Jak się domyślasz – wybrałem opcję drugą, dlatego powstała ta strona. By bardziej rozwinąć swoje umiejętności komunikacyjne i nieść profesjonalną pomoc, ukończyłem kilka kursów w tym kierunku oraz zdobyłem tytuł: “Meritum Certified Coach”. Dzięki temu, na co dzień prowadzę sesje online, na których z pomocą narzędzi psychologicznych, przechodzę z klientami przez ważne dla nich tematy lub szkolę ich z wybranej dziedziny.
-    
-    W międzyczasie działam w branży pisarskiej - jestem autorem wspomnianego wyżej profilu na instagramie oraz ebooków:`,
-
-    u_list:[
-    "“5 warunków idealnego związku” (zdrowe relacje, rozwój osobisty)",
-    "“Zrozum siebie” (filozofia, pewność siebie, rozwój osobisty)",
-    "“30 nawyków szczęścia” (dobre samopoczucie, rozwój osobisty)",
-    ],
-
-    text_two:`
-    … i nadchodzą kolejne tytuły! Nie spodziewam się, że przestanę kiedyś pisać, ponieważ jest to moja największa pasja, która od 2013 roku sprawia mi ogromną radość i pozwala mi dzielić się wiedzą w bardziej szczegółowy i zrozumiały sposób. Mogę to robić całymi dniami. Lubię dużo pracować, ponieważ robię to, co kocham - czy w takim razie jest to praca?
-    
-    A czym zajmowałem się wcześniej? Rozwijałem się w branży fitness. Prowadziłem treningi personalne oraz byłem koordynatorem trenerów i instruktorów. Jeszcze wcześniej pracowałem na stanowisku kierowniczym w salonie sprzedażowym i w wolnej chwili, z pasji do muzyki, występowałem ulicznie w Warszawie (tak, mam swoje piosenki, ale pisarstwo jest odrobinę większą pasją w tym momencie mojego życia, więc niczego muzycznego jeszcze nie wydam - c i e r p l i w o ś c i ).
-    
-    Moja prywatność jest bardzo połączona z moimi projektami, dlatego zawsze jestem sobą. Uważam, że bez autentyczności, nie można cieszyć się swoim życiem, ani pracą. A w naprawdę wolnych chwilach, ćwiczę na siłowni, spędzam czas w kawiarni z książką i bez przerwy słucham muzyki (mam wrażenie, że Spotify i producenci słuchawek utrzymują się głównie dzięki mnie). Dodatkowo uczę się grać na klawiszach oraz szlifuję Hiszpański.
-    
-    Często w swoim otoczeniu powtarzam to, jak ważnym elementem miłości do samego siebie jest pasja. Nie mógłbym rozwijać się w czymś, co mi się nie podoba, co sprawia że czuję się źle lub przez co sam zaczynam być dla innych toksycznym środowiskiem. Porzuciłem konfliktowe życie już dawno temu i zbudowałem swoje pozytywne środowisko od zera. Jestem szczęśliwym człowiekiem, który z każdym rokiem czuje się coraz młodziej - i tym pragnę dzielić się ze światem.
-    
-    Moje motto: “Mała szansa na osiągnięcie celu, nie powinna zniechęcać do podjęcia próby”.`
+    `W międzyczasie działam w branży pisarskiej - jestem autorem wspomnianego wyżej profilu na instagramie oraz ebooków:`,
+    ]
 };
 
 const EBOOKS_DATA = {
@@ -43,14 +25,17 @@ const EBOOKS_DATA = {
         key: 1,
         title: "“5 warunków idealnego związku”",
         description: "(zdrowe relacje, rozwój osobisty)",
+        img_name: "5_warunkow_idealnego_zwiazku"
         },{
         key: 2,
         title: "“Zrozum siebie”",
         description: "(filozofia, pewność siebie, rozwój osobisty)",
+        img_name: "zrozum_siebie"
         },{
         key: 3,
         title: "“30 nawyków szczęścia”",
         description: "(dobre samopoczucie, rozwój osobisty)",
+        img_name: ""
         },]
 };
 
@@ -78,29 +63,31 @@ const COACHING_DATA = {
     },
     {
         text_one: `Każdy może zapisać się na taką sesję. Najczęściej jednak pracuję z osobami, które:`,
+        u_list: [
+            "mają jakieś bariery lub negatywne przekonania o sobie",
+            "szukają rozwiązań na swoje sprawy",
+            "nie potrafią podjąć decyzji",
+            "chcą po prostu być szczęśliwe",
+            "chcą zmienić coś w swoim życiu",
+            "chcą na nowo zacząć żyć po rozstaniu z partnerem",
+            "chcą poprawić relację z partnerem, rodziną lub pracownikami",
+            "chcą poprawić jakość swojego życia lub rozwinąć się w jakiejś dziedzinie, na przykład rozwinąć w sobie pewność siebie, asertywność, miłość, cierpliwość i wiele innych…"
+            ],
         text_two: `Coaching jest dosłownie dla każdej osoby, która pragnie choć najmniejszej zmiany w swoim życiu. Ty decydujesz o temacie sesji i tym, czego tak naprawdę chcesz dla siebie. Podczas sesji, w każdej chwili możesz przerwać temat lub go zmienić. Nawet jeśli nie wiesz o czym chcesz porozmawiać - coaching ma na to sposób (dzięki psychologicznym narzędziom, bardzo szybko pomogę Ci odnaleźć się w Twoich myślach).`,
         offer: `Dostępne są: sesje indywidualne (1na1), w parach (np. ze swoim partnerem) lub grupowe (dla firmy, pracowników, sportowców, grona rodzinnego i tak dalej…).`,
-        u_list: [
-        "mają jakieś bariery lub negatywne przekonania o sobie",
-        "szukają rozwiązań na swoje sprawy",
-        "nie potrafią podjąć decyzji",
-        "chcą po prostu być szczęśliwe",
-        "chcą zmienić coś w swoim życiu",
-        "chcą na nowo zacząć żyć po rozstaniu z partnerem",
-        "chcą poprawić relację z partnerem, rodziną lub pracownikami",
-        "chcą poprawić jakość swojego życia lub rozwinąć się w jakiejś dziedzinie, na przykład rozwinąć w sobie pewność siebie, asertywność, miłość, cierpliwość i wiele innych…"
-        ]
     },
     {
-        text: `Podstawowa różnica między terapią a coachingiem jest taka, że terapia jest przejściem z dysfunkcji do normy, natomiast coaching jest przejściem z normy do skuteczności (w życiu, zawodzie, związku…). Praktyka to coś, co sobie bardzo cenię. Jestem człowiekiem nastawionym na rozwiązania, nie mam tendencji do rozpamiętywania przeszłości, jestem optymistą i znam swoje mocne strony. Mam naturalne predyspozycje do prowadzenia sesji coachingowych i skutecznie się w tym spełniam.
+        u_list: [
+        `Podstawowa różnica między terapią a coachingiem jest taka, że terapia jest przejściem z dysfunkcji do normy, natomiast coaching jest przejściem z normy do skuteczności (w życiu, zawodzie, związku…). Praktyka to coś, co sobie bardzo cenię. Jestem człowiekiem nastawionym na rozwiązania, nie mam tendencji do rozpamiętywania przeszłości, jestem optymistą i znam swoje mocne strony. Mam naturalne predyspozycje do prowadzenia sesji coachingowych i skutecznie się w tym spełniam.`,
 
-        Wybrałem ten system, dlatego że stosowałem jego narzędzia (na sobie i innych), zanim w ogóle poznałem, czym on jest. Narzędzia te pomogły mi w staniu się tym, kim jestem dzisiaj, dlatego wiem, że system działa i w połączeniu z moimi umiejętnościami, jestem w stanie pomóc też innym w ich drodze do spełnienia.
+        `Wybrałem ten system, dlatego że stosowałem jego narzędzia (na sobie i innych), zanim w ogóle poznałem, czym on jest. Narzędzia te pomogły mi w staniu się tym, kim jestem dzisiaj, dlatego wiem, że system działa i w połączeniu z moimi umiejętnościami, jestem w stanie pomóc też innym w ich drodze do spełnienia.`,
         
-        Wyobraź sobie, że w Twoim życiu wszystko się układa, masz nad wszystkim kontrolę, czujesz się “pełny(a)” i akceptujesz to, kim jesteś oraz jak jest dookoła Ciebie. Każdego dnia budzisz się z uśmiechem i masz chęci do działania. Nawet jeśli jest kilka rzeczy do poprawy, to i tak czujesz, że żyjesz. Tak wygląda moje życie - i Twoje też tak może wyglądać.
+        `Wyobraź sobie, że w Twoim życiu wszystko się układa, masz nad wszystkim kontrolę, czujesz się “pełny(a)” i akceptujesz to, kim jesteś oraz jak jest dookoła Ciebie. Każdego dnia budzisz się z uśmiechem i masz chęci do działania. Nawet jeśli jest kilka rzeczy do poprawy, to i tak czujesz, że żyjesz. Tak wygląda moje życie - i Twoje też tak może wyglądać.`,
         
-        Według mnie, praca, która jakkolwiek wpływa na nas toksycznie, nie jest warta żadnego czasu. Nic też nie jest warty związek, w którym zamiast przyjaźni, występuje wrogość i częste kłótnie. Żadna minuta nie jest warta pesymizmu, który utrzymuje nas z dala od radości. By móc zbudować sobie lepsze życie, lepszą rzeczywistość, potrzebujemy uporządkować aktualne sprawy, wzmocnić poczucie własnej wartości, stać się asertywnym i pewnym siebie człowiekiem oraz nauczyć się życzliwości - to wszystko prezentuję w swoim życiu prywatnym, więc nie umawiasz się z teoretykiem, lecz kimś, kto w praktyce wyznaje wartości człowieka szczęśliwego. Poprawiając jedną sferę życia, wpływa ona na kilka innych - jestem kimś, kto doskonale rozumie tę regułę i pomagam wdrażać to w życie moich klientów. Z odpowiednim nastawieniem i cierpliwością w sercu, możesz zbudować swoje lepsze życie - a coaching jest do tego najlepszym narzędziem.
+        `Według mnie, praca, która jakkolwiek wpływa na nas toksycznie, nie jest warta żadnego czasu. Nic też nie jest warty związek, w którym zamiast przyjaźni, występuje wrogość i częste kłótnie. Żadna minuta nie jest warta pesymizmu, który utrzymuje nas z dala od radości. By móc zbudować sobie lepsze życie, lepszą rzeczywistość, potrzebujemy uporządkować aktualne sprawy, wzmocnić poczucie własnej wartości, stać się asertywnym i pewnym siebie człowiekiem oraz nauczyć się życzliwości - to wszystko prezentuję w swoim życiu prywatnym, więc nie umawiasz się z teoretykiem, lecz kimś, kto w praktyce wyznaje wartości człowieka szczęśliwego. Poprawiając jedną sferę życia, wpływa ona na kilka innych - jestem kimś, kto doskonale rozumie tę regułę i pomagam wdrażać to w życie moich klientów. Z odpowiednim nastawieniem i cierpliwością w sercu, możesz zbudować swoje lepsze życie - a coaching jest do tego najlepszym narzędziem.`,
         
-        Zapraszam Cię do skorzystania z mojej oferty - jestem pewny, że tak jak moi dotychczasowi klienci, już po dwóch-trzech spotkaniach dostrzeżesz znaczną różnicę (niektórzy nawet po jednej sesji osiągają swój cel). A jeśli nigdy nie pracowałeś/aś w coachingu i masz wątpliwości - skontaktuj się ze mną i skorzystaj ze wstępnej, całkowicie darmowej konsultacji. Porozmawiamy o Twoich potrzebach, oczekiwaniach i odpowiem na Twoje pytania.`,
+        `Zapraszam Cię do skorzystania z mojej oferty - jestem pewny, że tak jak moi dotychczasowi klienci, już po dwóch-trzech spotkaniach dostrzeżesz znaczną różnicę (niektórzy nawet po jednej sesji osiągają swój cel). A jeśli nigdy nie pracowałeś/aś w coachingu i masz wątpliwości - skontaktuj się ze mną i skorzystaj ze wstępnej, całkowicie darmowej konsultacji. Porozmawiamy o Twoich potrzebach, oczekiwaniach i odpowiem na Twoje pytania.`,
+        ],
     },
     ]
 }
@@ -294,7 +281,7 @@ const PRICING_DATA = {
 const CONTACT_DATA = {
     description: "Jestem dostępny tutaj:",
     email_address: "najpierwjakontakt@gmail.com",
-    phone_nr: "690939066",
+    phone_nr: "690-939-066",
     instagram: "@najpierw_ja",
 };
 

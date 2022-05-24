@@ -1,7 +1,7 @@
 <script>
   import { Router, Route } from "svelte-routing";
 
-  import Layout1 from "./routes/Layout1/Layout_1.svelte";
+  import Layout1 from "./routes/Layout/Layout.svelte";
   import Layout2 from "./routes/Layout2/Layout_2.svelte";
   import Layout3 from "./routes/Layout3/Layout_3.svelte";
   import Layout4 from "./routes/Layout4/Layout_4.svelte";

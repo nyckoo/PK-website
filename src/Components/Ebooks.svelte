@@ -1,15 +1,15 @@
 <script>
     import { Container, Row, Col } from 'sveltestrap'
-  
-    export let ebooksData = {}
-    const { heading, boldheading, u_list } = ebooksData
+    import Data from '../Data/data'
+    
+    const { heading, boldheading, u_list } = Data.EBOOKS_DATA
   </script>
   
   <section class="section" id="ebooks">
     <Container>
       <Row class="justify-content-center text-center">
         <Col lg={12}>
-          <i class="ti-book title-icon text-muted" />
+          <i class="fa-solid fa-book-open-reader title-icon text-dark" />
           <h3 class="title">
             {heading} <span class="fw-bold">{boldheading}</span>
           </h3>
@@ -31,7 +31,8 @@
               </div>
               -->
               <div class="mt-3">
-                <h5 class="services-title fw-bold mb-3">{item.title}</h5>
+                <img src="assets\images\ebooks\{item.img_name}.jpeg" alt="." width="280px">
+                <h5 class="services-title fw-bold mt-5 mb-3">{item.title}</h5>
                 <p class="services-subtitle text-muted">
                   {item.description}
                 </p>

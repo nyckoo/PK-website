@@ -44,22 +44,23 @@
         <div class="text-center">
           <ul class="list-inline social mb-0">
             <li class="list-inline-item">
-              <Link to={"#"} class="social-icon text-muted"
-                ><i class="ti-facebook" /></Link
+              <a href="https://www.instagram.com/najpierw_ja/" class="social-icon text-muted"
+                ><i class="fa-brands fa-instagram"></i></a
               >
             </li>
             <li class="list-inline-item">
               <Link to={"#"} class="social-icon text-muted"
-                ><i class="ti-twitter-alt" /></Link
+                ><i class="fa-brands fa-facebook"></i></Link
               >
             </li>
             <li class="list-inline-item">
               <Link to={"#"} class="social-icon text-muted"
-                ><i class="ti-linkedin" /></Link
+                ><i class="fa-brands fa-tiktok"></i></Link
               >
             </li>
           </ul>
         </div>
+        <!--
         <div class="footer-terms">
           <ul class="mb-0 list-inline text-center mt-4 pt-2">
             <li class="list-inline-item">
@@ -73,9 +74,10 @@
             </li>
           </ul>
         </div>
-        <div class="mt-4 pt-2 text-center">
+        -->
+        <div class="mt-5 pt-2 text-center">
           <p class="copy-rights text-muted mb-0">
-            {new Date().getFullYear()} © Najpierw Ja
+            {new Date().getFullYear()} © Paweł Kowalski
           </p>
         </div>
       </Col>
