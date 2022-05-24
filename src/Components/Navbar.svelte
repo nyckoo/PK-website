@@ -3,7 +3,8 @@
 
   import { scrollto } from 'svelte-scrollto'
   import { onMount } from 'svelte'
-  import { Button } from "sveltestrap";
+  import { Button } from "sveltestrap"
+  import { Link } from 'svelte-routing'
 
   function windowScroll() {
     const navbar = document.getElementById("navbar");
@@ -86,7 +87,7 @@ window.addEventListener('scroll', (ev) => {
   
 </script>
 
-<!-- STRAT NAVBAR -->
+<!-- START NAVBAR -->
 <div>
   <nav
     class={"navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-dark " + extraclass}
@@ -99,14 +100,14 @@ window.addEventListener('scroll', (ev) => {
         <li class="list-inline-item">
           <!-- Shopping cart button -->
           <Button class="navbar-toggler" href={"koszyk"}>
-            <span class="ti-shopping-cart" />
+            <span class="fa-solid fa-cart-shopping" />
           </Button>
         </li>
 
         <li class="list-inline-item">
           <!-- Menu button -->
           <Button class="navbar-toggler" on:click={toggleMenu}>
-            <span class="ti-menu" />
+            <span class="fa-solid fa-bars" />
           </Button>
         </li>
       </ul>
@@ -135,7 +136,9 @@ window.addEventListener('scroll', (ev) => {
             </li>
             -->
             <li class="list-inline-item">
-              <a href={"koszyk"} class="shopping-cart"><i class="ti-shopping-cart" /></a>
+              <Link to="koszyk" class="shopping-cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </Link>
             </li>
           </ul>
           <!-- end ul -->

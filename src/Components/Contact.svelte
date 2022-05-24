@@ -1,19 +1,20 @@
 <script>
   import { Form, Row, Col, Input, Container } from 'sveltestrap'
-  export let contactData = {}
-  let {
+  import Data from '../Data/data'
+
+  const {
     description,
     email_address,
     phone_nr,
     instagram
-  } = contactData
+  } = Data.CONTACT_DATA
 </script>
 
 <section class="section" id="contact">
   <Container>
     <Row class="justify-content-center text-center">
       <Col lg={12}>
-        <i class="ti-headphone-alt title-icon text-muted" />
+        <i class="fa-solid fa-phone title-icon text-dark" />
         <h3 class="title">
           <span class="fw-bold">Kontakt</span>
         </h3>
@@ -55,7 +56,7 @@
                     id="name"
                     type="text"
                     class="form-control"
-                    placeholder="Your name*"
+                    placeholder="Imię*"
                   />
                 </div>
               </Col>
@@ -67,7 +68,7 @@
                     id="email"
                     type="email"
                     class="form-control"
-                    placeholder="Your email*"
+                    placeholder="Adres e-mail*"
                   />
                 </div>
               </Col>
@@ -81,7 +82,7 @@
                     type="text"
                     class="form-control"
                     id="subject"
-                    placeholder="Your Subject.."
+                    placeholder="Temat wiadomości*"
                   />
                 </div>
               </Col>
@@ -97,7 +98,7 @@
                     id="comments"
                     rows="4"
                     class="form-control"
-                    placeholder="Your message..."
+                    placeholder="Treść wiadomości*"
                   />
                 </div>
               </Col>
@@ -111,7 +112,7 @@
                   id="submit"
                   name="send"
                   class="submitBnt btn btn-primary"
-                  value="Send Message"
+                  value="Wyślij Wiadomość"
                 />
                 <div id="simple-msg" />
               </Col>

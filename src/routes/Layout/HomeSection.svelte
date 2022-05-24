@@ -1,9 +1,8 @@
 <script>
   import { Container, Row, Col } from 'sveltestrap';
-  import {Link} from "svelte-routing"
+  import Data from '../../Data/data'
 
-  export let homeData = {}
-  const { quote } =  homeData
+  const { quote } =  Data.HOME_DATA
 </script>
 
 <section class="section bg-home half-home" id="home">

@@ -1,12 +1,6 @@
 <script>
     import Navbar from '../../Components/Navbar.svelte'
-    import HomeSection from '../Layout1/HomeSection.svelte'
-    import Service from '../../Components/Service.svelte'
-    import Feature from '../../Components/Feature.svelte'
-    import Testimonial from '../../Components/Testimonial.svelte'
-    import Team from '../../Components/Team.svelte'
-    import Faq from '../../Components/Faq.svelte'
-    import Pricing from '../../Components/Pricing.svelte'
+    import HomeSection from '../Layout/HomeSection.svelte'
     import Contact from '../../Components/Contact.svelte'
     import Footer from '../../Components/Footer.svelte'
     import About from '../../Components/About.svelte';
