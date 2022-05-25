@@ -44,7 +44,7 @@
         <div class="text-center">
           <ul class="list-inline social mb-0">
             <li class="list-inline-item">
-              <a href="https://www.instagram.com/najpierw_ja/" class="social-icon text-muted"
+              <a target="_blank" href="http://instagram.com/_u/najpierw_ja/" class="social-icon text-muted"
                 ><i class="fa-brands fa-instagram"></i></a
               >
             </li>
@@ -89,7 +89,7 @@
 <!-- Back to top -->
 
 <Link to={""} class="back-to-top" id="back-to-top" on:click={scrollTop}>
-  <i class="ti-angle-up" /></Link
+  <i class="fa-solid fa-angle-up" /></Link
 >
 
 <!-- Style switcher

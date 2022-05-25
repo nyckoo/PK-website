@@ -32,9 +32,13 @@
                   </h5>
                 </div>
                 <div class="mt-4 p-4">
-                  <p class="text-muted text-center">
-                    {answers[0].text}
-                  </p>
+                  {#each answers[0].text as item}
+                  <div class="mt-3">
+                    <p class="text-muted">
+                      {item}
+                    </p>
+                  </div>
+                  {/each}
                 </div>
                 <div class="container">
                   <div class="row justify-content-center">
@@ -80,10 +84,21 @@
                     {answers[1].text_two}
                   </p>
                 </div>
-                <div class="mt-4">
-                  <p class="text-muted text-center">
-                    {answers[1].offer}
+                <div class="mt-5">
+                  <p class="text-muted text-center fw-bold">
+                    {answers[1].offer_text}
                   </p>
+                  <Row class="mt-5 text-center">
+                    {#each answers[1].offer as item}
+                      <Col md={6}>
+                        <div class="services-box">
+                          <p class="services-subtitle fw-normal fst-italic">
+                            {item}
+                          </p>
+                        </div>
+                      </Col>
+                    {/each}
+                  </Row>
                 </div>
             </div>
           </div>

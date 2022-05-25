@@ -4,10 +4,11 @@ const HOME_DATA = {
 
 const ABOUT_DATA = {
     pretext: "Kim jestem:",
-    text_list: [`Cześć! Nazywam się Paweł Kowalski.
-    Większość osób kojarzy mnie z social mediów, pod pseudonimem “najpierw ja”. W internecie oraz w życiu prywatnym, określam siebie jako osobę szczęśliwą i otwartą na rozmowę. To mój naturalny talent - potrafię każdego dnia poznać kogoś nowego i szczerze się nim zainteresować. Na tym też buduję swoją markę - uwielbiam poznawać drugiego człowieka takim, jakim jest, bez oceniania go, ponieważ rozumiem, że każdy ma swoje indywidualne wartości i potrzeby.`,
+    text_list: [`Cześć! Nazywam się Paweł Kowalski.`,
+
+    `Większość osób kojarzy mnie z social mediów, pod pseudonimem “najpierw ja”. W internecie oraz w życiu prywatnym, określam siebie jako osobę szczęśliwą i otwartą na rozmowę. To mój naturalny talent - potrafię każdego dnia poznać kogoś nowego i szczerze się nim zainteresować. Na tym też buduję swoją markę - uwielbiam poznawać drugiego człowieka takim, jakim jest, bez oceniania go, ponieważ rozumiem, że każdy ma swoje indywidualne wartości i potrzeby.`,
     
-    `Od kiedy założyłem profil @najpierw_ja, codziennie dzielę się wiedzą na temat kochania siebie, relacji partnerskich, drogi do szczęścia, pewności siebie i spraw biznesowych - to moje główne tematy, w których edukuję się od lat (nie tylko teoretycznie, ale przede wszystkim sprawdzam je w praktyce) i nie zamierzam przestać.`,
+    `Od kiedy założyłem profil <strong>@najpierw_ja</strong>, codziennie dzielę się wiedzą na temat kochania siebie, relacji partnerskich, drogi do szczęścia, pewności siebie i spraw biznesowych - to moje główne tematy, w których edukuję się od lat (nie tylko teoretycznie, ale przede wszystkim sprawdzam je w praktyce) i nie zamierzam przestać.`,
     
     `Jak to się stało, że robię to, co robię? Czasem mam wrażenie, że to nie ja wybrałem tę ścieżkę życia, a to ta ścieżka życia wybrała mnie - bo wszystko co robię, jest związane z moimi pasjami. Zaczęło się lata temu, od zwykłych wyjść na kawę i szczerego dzielenia wnioskami o życiu, nie ukrywając ani pozytywnych, ani negatywnych myśli (dalej zdarza mi się tak spędzać czas). Ludzie, z którymi się spotykałem, mówili mi, że taka rozmowa bardzo im pomaga i powinienem pomyśleć o psychologii, coachingu lub jakiejś innej formie pracy, w której miałbym kontakt z klientem 1na1. Na początku przyjmowałem to tylko jako komplement, lecz z czasem zacząłem rozumieć, że to jest coś, czym bardzo chcę się zajmować.`,
     
@@ -28,27 +29,29 @@ const EBOOKS_DATA = {
         img_name: "5_warunkow_idealnego_zwiazku"
         },{
         key: 2,
+        title: "“30 nawyków szczęścia”",
+        description: "(dobre samopoczucie, rozwój osobisty)",
+        img_name: "30_nawykow_szczescia"
+        },{
+        key: 3,
         title: "“Zrozum siebie”",
         description: "(filozofia, pewność siebie, rozwój osobisty)",
         img_name: "zrozum_siebie"
-        },{
-        key: 3,
-        title: "“30 nawyków szczęścia”",
-        description: "(dobre samopoczucie, rozwój osobisty)",
-        img_name: ""
         },]
 };
 
 const COACHING_DATA = {
     questions: ["Czym jest coaching?", "Kto może skorzystać z coachingu?", "Dlaczego coaching i dlaczego akurat ja?"],
     answers: [{
-        text: `Coaching jest przemyślanym procesem, bazującym na cyklu odpowiednio prowadzonych rozmów z osobą coachowaną, w celu stworzenia dla niej warunków do indywidualnego rozwoju, świadomych działań nastawionych na rezultaty i trwałych zmian w pożądanym kierunku. To proces auto przywództwa, który umożliwia ludziom uzyskanie świadomości kim są, co robią, dlaczego to robią i gdzie chcą dojść.
+        text: [
+        `Coaching jest przemyślanym procesem, bazującym na cyklu odpowiednio prowadzonych rozmów z osobą coachowaną, w celu stworzenia dla niej warunków do indywidualnego rozwoju, świadomych działań nastawionych na rezultaty i trwałych zmian w pożądanym kierunku. To proces auto przywództwa, który umożliwia ludziom uzyskanie świadomości kim są, co robią, dlaczego to robią i gdzie chcą dojść.`,
 
-        Głównym celem coachingu, jest pomoc ludziom w obiektywnym ustaleniu, gdzie znajdują się w chwili obecnej, a gdzie chcą się znaleźć w przyszłości oraz stworzenie planu, który pozwoli im przejść z punktu A do punktu B.
+        `Głównym celem coachingu, jest pomoc ludziom w obiektywnym ustaleniu, gdzie znajdują się w chwili obecnej, a gdzie chcą się znaleźć w przyszłości oraz stworzenie planu, który pozwoli im przejść z punktu A do punktu B.`,
         
-        Coach nie podejmuje decyzji za osobę coachowaną, lecz korzystając z odpowiednich narzędzi psychologicznych, które pod każdego wybiera indywidualnie (na bazie tego, co usłyszał podczas rozmowy) - wyjmuje z niej to, co najlepsze, by dzięki jej własnym zasobom i wartościom, wypracować postawiony cel.
+        `Coach nie podejmuje decyzji za osobę coachowaną, lecz korzystając z odpowiednich narzędzi psychologicznych, które pod każdego wybiera indywidualnie (na bazie tego, co usłyszał podczas rozmowy) - wyjmuje z niej to, co najlepsze, by dzięki jej własnym zasobom i wartościom, wypracować postawiony cel.`,
         
-        Cechy charakterystyczne coachingu:`,
+        `Cechy charakterystyczne coachingu:`,
+        ],
 
         u_list: [
         "dokonuje się w atmosferze szacunku i pełnej akceptacji dla wartości klienta",
@@ -74,7 +77,10 @@ const COACHING_DATA = {
             "chcą poprawić jakość swojego życia lub rozwinąć się w jakiejś dziedzinie, na przykład rozwinąć w sobie pewność siebie, asertywność, miłość, cierpliwość i wiele innych…"
             ],
         text_two: `Coaching jest dosłownie dla każdej osoby, która pragnie choć najmniejszej zmiany w swoim życiu. Ty decydujesz o temacie sesji i tym, czego tak naprawdę chcesz dla siebie. Podczas sesji, w każdej chwili możesz przerwać temat lub go zmienić. Nawet jeśli nie wiesz o czym chcesz porozmawiać - coaching ma na to sposób (dzięki psychologicznym narzędziom, bardzo szybko pomogę Ci odnaleźć się w Twoich myślach).`,
-        offer: `Dostępne są: sesje indywidualne (1na1), w parach (np. ze swoim partnerem) lub grupowe (dla firmy, pracowników, sportowców, grona rodzinnego i tak dalej…).`,
+        offer_text : "Dostępne są:",
+        offer: [
+            `- sesje indywidualne (1na1)`, `- w parach (np. ze swoim partnerem)`,
+        ],
     },
     {
         u_list: [
@@ -85,6 +91,8 @@ const COACHING_DATA = {
         `Wyobraź sobie, że w Twoim życiu wszystko się układa, masz nad wszystkim kontrolę, czujesz się “pełny(a)” i akceptujesz to, kim jesteś oraz jak jest dookoła Ciebie. Każdego dnia budzisz się z uśmiechem i masz chęci do działania. Nawet jeśli jest kilka rzeczy do poprawy, to i tak czujesz, że żyjesz. Tak wygląda moje życie - i Twoje też tak może wyglądać.`,
         
         `Według mnie, praca, która jakkolwiek wpływa na nas toksycznie, nie jest warta żadnego czasu. Nic też nie jest warty związek, w którym zamiast przyjaźni, występuje wrogość i częste kłótnie. Żadna minuta nie jest warta pesymizmu, który utrzymuje nas z dala od radości. By móc zbudować sobie lepsze życie, lepszą rzeczywistość, potrzebujemy uporządkować aktualne sprawy, wzmocnić poczucie własnej wartości, stać się asertywnym i pewnym siebie człowiekiem oraz nauczyć się życzliwości - to wszystko prezentuję w swoim życiu prywatnym, więc nie umawiasz się z teoretykiem, lecz kimś, kto w praktyce wyznaje wartości człowieka szczęśliwego. Poprawiając jedną sferę życia, wpływa ona na kilka innych - jestem kimś, kto doskonale rozumie tę regułę i pomagam wdrażać to w życie moich klientów. Z odpowiednim nastawieniem i cierpliwością w sercu, możesz zbudować swoje lepsze życie - a coaching jest do tego najlepszym narzędziem.`,
+
+        `Moje motto: “Mała szansa na osiągnięcie celu, nie powinna zniechęcać do podjęcia próby”.`,
         
         `Zapraszam Cię do skorzystania z mojej oferty - jestem pewny, że tak jak moi dotychczasowi klienci, już po dwóch-trzech spotkaniach dostrzeżesz znaczną różnicę (niektórzy nawet po jednej sesji osiągają swój cel). A jeśli nigdy nie pracowałeś/aś w coachingu i masz wątpliwości - skontaktuj się ze mną i skorzystaj ze wstępnej, całkowicie darmowej konsultacji. Porozmawiamy o Twoich potrzebach, oczekiwaniach i odpowiem na Twoje pytania.`,
         ],

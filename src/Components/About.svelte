@@ -15,12 +15,13 @@
             {pretext}
           </h3>
           <div class="about-box">
+            <!-- Make each piece html customizable -->
             {#each text_list as item}
-              <div class="mt-3">
-                <p class="text-muted">
-                  {item}
-                </p>
-              </div>
+                <div class="mt-3">
+                  <p class="text-muted">
+                    {@html item}
+                  </p>
+                </div>
             {/each}
         </div>
         </Col>
