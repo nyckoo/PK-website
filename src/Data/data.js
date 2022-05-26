@@ -8,11 +8,11 @@ const ABOUT_DATA = {
 
     `Większość osób kojarzy mnie z social mediów, pod pseudonimem “najpierw ja”. W internecie oraz w życiu prywatnym, określam siebie jako osobę szczęśliwą i otwartą na rozmowę. To mój naturalny talent - potrafię każdego dnia poznać kogoś nowego i szczerze się nim zainteresować. Na tym też buduję swoją markę - uwielbiam poznawać drugiego człowieka takim, jakim jest, bez oceniania go, ponieważ rozumiem, że każdy ma swoje indywidualne wartości i potrzeby.`,
     
-    `Od kiedy założyłem profil <strong>@najpierw_ja</strong>, codziennie dzielę się wiedzą na temat kochania siebie, relacji partnerskich, drogi do szczęścia, pewności siebie i spraw biznesowych - to moje główne tematy, w których edukuję się od lat (nie tylko teoretycznie, ale przede wszystkim sprawdzam je w praktyce) i nie zamierzam przestać.`,
+    `Od kiedy założyłem profil <strong>@najpierw_ja</strong>, codziennie dzielę się wiedzą na temat kochania siebie, bliskich relacji, drogi do szczęścia, pewności siebie i spraw biznesowych - to moje główne tematy, w których edukuję się od lat (przede wszystkim w praktyce).`,
     
-    `Jak to się stało, że robię to, co robię? Czasem mam wrażenie, że to nie ja wybrałem tę ścieżkę życia, a to ta ścieżka życia wybrała mnie - bo wszystko co robię, jest związane z moimi pasjami. Zaczęło się lata temu, od zwykłych wyjść na kawę i szczerego dzielenia wnioskami o życiu, nie ukrywając ani pozytywnych, ani negatywnych myśli (dalej zdarza mi się tak spędzać czas). Ludzie, z którymi się spotykałem, mówili mi, że taka rozmowa bardzo im pomaga i powinienem pomyśleć o psychologii, coachingu lub jakiejś innej formie pracy, w której miałbym kontakt z klientem 1na1. Na początku przyjmowałem to tylko jako komplement, lecz z czasem zacząłem rozumieć, że to jest coś, czym bardzo chcę się zajmować.`,
+    `Jak to się stało, że robię to, co robię? Czasem mam wrażenie, że nie ja wybrałem tę ścieżkę życia, a to ta ścieżka życia wybrała mnie - ponieważ zawody które wykonuję, związane są z moimi pasjami. Zaczęło się lata temu, od zwykłych wyjść na kawę i szczerego dzielenia wnioskami o życiu. Ludzie, z którymi się spotykałem, mówili mi, że taka rozmowa bardzo pomaga im poukładać swoje sprawy i powinienem pomyśleć o psychologii, coachingu lub jakiejś innej formie pracy, w której miałbym kontakt z klientem 1na1, bo na pewno się w niej spełnię. Na początku przyjmowałem to tylko jako komplement, lecz z czasem zacząłem rozumieć, że to naprawdę jest coś, czym chcę się zajmować.`,
     
-    `Instagram stał się nowym miejscem spotkań, a wraz z rozwojem profilu, kontaktowało się ze mną coraz więcej osób. Była to dla mnie dobra wiadomość, ale dzień nadal miał tylko 24 godziny, więc zaczynało brakować czasu. Mając pracę, pasję, znajomych - stanąłem przed ważnym wyborem: “albo ograniczam relacje z obserwatorami i zajmuję się rozwojem życia prywatnego, albo wchodzę w to całym sobą”. Jak się domyślasz – wybrałem opcję drugą, dlatego powstała ta strona. By bardziej rozwinąć swoje umiejętności komunikacyjne i nieść profesjonalną pomoc, ukończyłem kilka kursów w tym kierunku oraz zdobyłem tytuł: “Meritum Certified Coach”. Dzięki temu, na co dzień prowadzę sesje online, na których z pomocą narzędzi psychologicznych, przechodzę z klientami przez ważne dla nich tematy życiowe (tkz. life coaching).`,
+    `Instagram stał się nowym miejscem spotkań, a wraz z rozwojem profilu, kontaktowało się ze mną coraz więcej osób. Była to dla mnie dobra wiadomość, lecz dzień nadal miał tylko 24 godziny, więc zaczynało brakować czasu. Mając pracę, pasję, znajomych - stanąłem przed ważnym wyborem: “albo ograniczam relacje z obserwatorami i zajmuję się rozwojem życia dotychczasowego jako trener personalny w branży fitness, albo wchodzę w to całym sobą i rozwijam się profesjonalnie w coachingu”. Jak się domyślasz – wybrałem opcję drugą. Ukończyłem więc szkolenia w oparciu o standardy i kodeks etyczny ICF, uzyskując międzynarodowy tytuł: “Meritum Certified Coach”. Dzięki temu, na co dzień prowadzę sesje online, na których z pomocą narzędzi psychologicznych, przechodzę z klientami przez ważne dla nich tematy życiowe (tzw. life coaching).`,
     
     `W międzyczasie działam w branży pisarskiej - jestem autorem wspomnianego wyżej profilu na instagramie oraz ebooków:`,
     ]
@@ -24,20 +24,29 @@ const EBOOKS_DATA = {
 
     u_list:[{
         key: 1,
+        price: "59zł *",
         title: "“5 warunków idealnego związku”",
-        description: "(zdrowe relacje, rozwój osobisty)",
+        short_description: "<i>(zdrowe relacje, rozwój osobisty)</i>",
+        description:"Zdania na temat tego co w związku jest najważniejsze, są podzielone. W tej książce nie stosuję podziału na „gorsze/lepsze” warunki, lecz opisuję wszystkie dokładnie z taką samą wartością, by uświadomić czytelnikowi, że nawet połączenie pasującego charakteru z ładną twarzą, nie zawsze wystarcza do zbudowania szczęśliwej relacji. Spełnienie wszystkich 5 warunków sprawia, że relacja zdobywa najniższe prawdopodobieństwo zerwania, a para czuje się ze sobą spełniona.",
         img_name: "5_warunkow_idealnego_zwiazku"
         },{
         key: 2,
+        price: "19zł *",
         title: "“30 nawyków szczęścia”",
-        description: "(dobre samopoczucie, rozwój osobisty)",
+        short_description: "<i>(dobre samopoczucie, rozwój osobisty)</i>",
+        description:"Zbiór podstawowych nawyków, które pomogą Ci stać się szczęśliwą osobą. Opanowanie ich poprawia asertywność, pewność siebie, jakość codziennego fukcjonowania i zachęca do spojrzenia na świat z innej perspektywy.",
         img_name: "30_nawykow_szczescia"
         },{
         key: 3,
+        price: "39zł *",
         title: "“Zrozum siebie”",
-        description: "(filozofia, pewność siebie, rozwój osobisty)",
+        short_description: "<i>(filozofia, pewność siebie, rozwój osobisty)</i>",
+        description:"Jesteśmy tym - co myślimy, mówimy, robimy i wszystkim innym, czego doświadczamy. Ta książka pomoże Ci uświadomić sobie, jak bardzo środowisko ma na nas wszystkich wpływ, jak ślepo powtarzamy niektóre czynności i co możemy zrobić, by przejąć nad tym kontrolę. Zrozumienie siebie jest nieodłącznym elementem szczęścia.",
         img_name: "zrozum_siebie"
-        },]
+        },
+    ],
+
+    current_offer: "*promocyjna cena z okazji premiery obowiązuje do 30.06.2022",
 };
 
 const COACHING_DATA = {
@@ -77,10 +86,15 @@ const COACHING_DATA = {
             "chcą poprawić jakość swojego życia lub rozwinąć się w jakiejś dziedzinie, na przykład rozwinąć w sobie pewność siebie, asertywność, miłość, cierpliwość i wiele innych…"
             ],
         text_two: `Coaching jest dosłownie dla każdej osoby, która pragnie choć najmniejszej zmiany w swoim życiu. Ty decydujesz o temacie sesji i tym, czego tak naprawdę chcesz dla siebie. Podczas sesji, w każdej chwili możesz przerwać temat lub go zmienić. Nawet jeśli nie wiesz o czym chcesz porozmawiać - coaching ma na to sposób (dzięki psychologicznym narzędziom, bardzo szybko pomogę Ci odnaleźć się w Twoich myślach).`,
-        offer_text : "Dostępne są:",
-        offer: [
-            `- sesje indywidualne (1na1)`, `- w parach (np. ze swoim partnerem)`,
-        ],
+        offer_text: ["Dostępne są:", "Cennik sesji online:"],
+        offer: {
+            services: [`- sesje indywidualne (1na1)`, `- w parach (np. ze swoim partnerem)`],
+            text_free: "<strong>Wstępna rozmowa - bezpłatna.</strong>",
+            text_prices: ["- 1 (pojedyncza) - 150zł",
+                "- 4x (pakiet 4) - 520zł",
+                "- 10x (pakiet 10) - 1200zł"
+            ],
+        },
     },
     {
         u_list: [
@@ -92,199 +106,13 @@ const COACHING_DATA = {
         
         `Według mnie, praca, która jakkolwiek wpływa na nas toksycznie, nie jest warta żadnego czasu. Nic też nie jest warty związek, w którym zamiast przyjaźni, występuje wrogość i częste kłótnie. Żadna minuta nie jest warta pesymizmu, który utrzymuje nas z dala od radości. By móc zbudować sobie lepsze życie, lepszą rzeczywistość, potrzebujemy uporządkować aktualne sprawy, wzmocnić poczucie własnej wartości, stać się asertywnym i pewnym siebie człowiekiem oraz nauczyć się życzliwości - to wszystko prezentuję w swoim życiu prywatnym, więc nie umawiasz się z teoretykiem, lecz kimś, kto w praktyce wyznaje wartości człowieka szczęśliwego. Poprawiając jedną sferę życia, wpływa ona na kilka innych - jestem kimś, kto doskonale rozumie tę regułę i pomagam wdrażać to w życie moich klientów. Z odpowiednim nastawieniem i cierpliwością w sercu, możesz zbudować swoje lepsze życie - a coaching jest do tego najlepszym narzędziem.`,
 
-        `Moje motto: “Mała szansa na osiągnięcie celu, nie powinna zniechęcać do podjęcia próby”.`,
+        `Moje motto: <i>“Mała szansa na osiągnięcie celu, nie powinna zniechęcać do podjęcia próby”</i>.`,
         
         `Zapraszam Cię do skorzystania z mojej oferty - jestem pewny, że tak jak moi dotychczasowi klienci, już po dwóch-trzech spotkaniach dostrzeżesz znaczną różnicę (niektórzy nawet po jednej sesji osiągają swój cel). A jeśli nigdy nie pracowałeś/aś w coachingu i masz wątpliwości - skontaktuj się ze mną i skorzystaj ze wstępnej, całkowicie darmowej konsultacji. Porozmawiamy o Twoich potrzebach, oczekiwaniach i odpowiem na Twoje pytania.`,
         ],
     },
     ]
 }
-
-const SERVICE_DATA = {
-    heading: "Best",
-    boldheading: "Services",
-    description: "It is a long established fact that a reader will be of a page when established fact looking at its layout.",
-    services_list: [{
-        key: 1,
-        label: "Digital Design",
-        description: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        icon: "ti-settings"
-    },
-    {
-        key: 2,
-        label: "Unlimited Colors",
-        description: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        icon: "ti-palette"
-    },
-    {
-        key: 3,
-        label: "Strategy Solutions",
-        description: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        icon: "ti-stats-up"
-    },
-    {
-        key: 4,
-        label: "Awesome Support",
-        description: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        icon: "ti-package"
-    },
-    {
-        key: 5,
-        label: "Truly Multipurpose",
-        description: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        icon: "ti-dashboard"
-    },
-    {
-        key: 6,
-        label: "Easy to customize",
-        description: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        icon: "ti-headphone"
-    },
-    ]
-};
-
-const FEATURES_DATA = {
-    heading: "Our",
-    boldheading: "Features",
-    description: "It is a long established fact that a reader will be of a page when established fact looking at its layout.",
-    feature_list: [
-        {
-            key: 1,
-            img: 'assets/images/mockup2.png',
-            title: "This is Improve Your Marketing business",
-            subtitle: "business",
-            type: "right",
-            description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam, quisnostrud ."
-        },
-        {
-            key: 2,
-            img: 'assets/images/mockup1.png',
-            type: "left",
-            title: "This Is Increase Your Marketing Performance",
-            description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim ad minim veniam, quisnostrud ."
-        },
-    ]
-};
-
-const TESATIMONIAL_DATA = {
-    testimonial_list: [
-        {
-            profile: 'assets/images/testi/testi-1.jpg',
-            description: "Risus cubilia etiam parturient augue nostra sodales sit aptent venenatis magna sapienante hendrerit ullamcorper tincidunt urna eget Ante feugiat.",
-            name: 'John Litts, Globing'
-        },
-        {
-            profile: 'assets/images/testi/testi-2.jpg',
-            description: "Our task must be to free ourselves by widening our circle of compassion to embrace all living creatures and the whole of quis consectetur nunc sit amet semper justo.nature and its beauty.",
-            name: 'Laurie Bell',
-            text: 'Worcester'
-        },
-        {
-            profile: 'assets/images/testi/testi-3.jpg',
-            description: "I've learned that people will forget what you said, people will forget what you did,but people will never forget how donec in efficitur lectus, nec lobortis metus you made them feel.",
-            name: 'Howard Kelley',
-            text: 'Lynchburg'
-        }
-    ]
-};
-
-const TEAM_DATA = {
-    heading: "Our",
-    boldheading: "Team",
-    description: "It is a long established fact that a reader will be of a page when established fact looking at its layout.",
-    team_list: [
-        {
-            profile: 'assets/images/team/team-3.png',
-            name: '@Donald Laughlin',
-            designation: 'You want customer to your store. Easily your coupans and has Clooger.'
-        },
-        {
-            profile: 'assets/images/team/team-2.png',
-            name: '@Rigoberto Valenza',
-            designation: 'You want customer to your store. Easily your coupans and has Clooger.'
-        },
-        {
-            profile: 'assets/images/team/team-1.png',
-            name: '@Venessa Smith',
-            designation: 'You want customer to your store. Easily your coupans and has Clooger.'
-        }
-    ]
-};
-
-const FAQDATA = {
-    heading: "Our",
-    boldheading: "Support",
-    description: "It is a long established fact that a reader will be of a page when established fact looking at its layout.",
-    pricing_list: [
-        {
-            pricing1: [{
-                title: 'What is Lorem Ipsum?',
-                description: 'You want customer to your store. Easily publish your coupans and when a user has manage to catch one of your coupens, the coupens wil be deducted from your coupens account at Clooger.'
-            },
-            {
-                title: 'Why use Lorem Ipsum?',
-                description: 'You want customer to your store. Easily publish your coupans and when a user has manage to catch one of your coupens, the coupens wil be deducted from your coupens account at Clooger.'
-            },
-            {
-                title: 'How many variations exist?',
-                description: 'You want customer to your store. Easily publish your coupans and when a user has manage to catch one of your coupens, the coupens wil be deducted from your coupens account at Clooger.'
-            }]
-        },
-        {
-            pricing1: [
-                {
-                    title: 'What is Lorem Ipsum?',
-                    description: 'You want customer to your store. Easily publish your coupans and when a user has manage to catch one of your coupens, the coupens wil be deducted from your coupens account at Clooger.'
-                },
-                {
-                    title: 'Is safe use Lorem Ipsum?',
-                    description: 'You want customer to your store. Easily publish your coupans and when a user has manage to catch one of your coupens, the coupens wil be deducted from your coupens account at Clooger.'
-                },
-                {
-                    title: 'When can be used?',
-                    description: 'You want customer to your store. Easily publish your coupans and when a user has manage to catch one of your coupens, the coupens wil be deducted from your coupens account at Clooger.'
-                }]
-        }
-
-    ]
-};
-
-const CTA_SECTION = {
-    title: 'You have another questions or need help?',
-    buttontext: 'Contact Us'
-};
-
-const PRICING_DATA = {
-    heading: "Our",
-    boldheading: "Pricing",
-    description: 'It is a long established fact that a reader will be of a page when established fact looking at its layout.',
-    pricing_list: [
-        {
-            price: '$29',
-            bandwidth: '1GB',
-            onlinespace: '50MB',
-            support: 'No',
-            domain: 1,
-            hiddenfees: 'No Hidden Fees'
-        },
-        {
-            price: '$59',
-            bandwidth: '2GB',
-            onlinespace: '500MB',
-            support: 'Yes',
-            domain: 5,
-            hiddenfees: 'No Hidden Fees'
-        },
-        {
-            price: '$79',
-            bandwidth: '4GB',
-            onlinespace: '1 GB',
-            support: 'Yes',
-            domain: 10,
-            hiddenfees: 'No Hidden Fees'
-        }
-    ]
-};
 
 const CONTACT_DATA = {
     description: "Jestem dostępny tutaj:",
@@ -293,15 +121,6 @@ const CONTACT_DATA = {
     instagram: "@najpierw_ja",
 };
 
-const CONTACTDATA = {
-    heading: "Get In",
-    boldheading: "Touch",
-    description: 'It is a long established fact that a reader will be of a page when established fact looking at its layout.',
-    customercare: "+1 234 56 7894",
-    officeaddress: "4461 Cedar Street Moro, AR 72368",
-    emailaddress: "info@gmail.com",
-    officetime: "+9:00AM To 6:00PM",
-};
 
 const MOCK_DATA = {
     HOME_DATA,
@@ -309,14 +128,6 @@ const MOCK_DATA = {
     EBOOKS_DATA,
     COACHING_DATA,
     CONTACT_DATA,
-    SERVICE_DATA,
-    FEATURES_DATA,
-    TESATIMONIAL_DATA,
-    TEAM_DATA,
-    FAQDATA,
-    CTA_SECTION,
-    PRICING_DATA,
-    CONTACTDATA
 };
 
 export default MOCK_DATA;

@@ -19,7 +19,7 @@
       "assets/css/colors/" + color + ".css";
   }
 
-  function scrollNavigation(){
+  function scrollNavigation() {
     if (
       document.body.scrollTop > 100 ||
       document.documentElement.scrollTop > 100
@@ -28,13 +28,11 @@
     } else {
       document.getElementById("back-to-top").style.display = "none";
     }
-  };
+  }
 
   onMount(async () => {
     window.addEventListener("scroll", scrollNavigation, true);
   });
-
-
 </script>
 
 <section class="section footer">
@@ -44,18 +42,21 @@
         <div class="text-center">
           <ul class="list-inline social mb-0">
             <li class="list-inline-item">
-              <a target="_blank" href="http://instagram.com/_u/najpierw_ja/" class="social-icon text-muted"
-                ><i class="fa-brands fa-instagram"></i></a
+              <a
+                target="_blank"
+                href="https://instagram.com/najpierw_ja/"
+                class="social-icon text-muted"
+                ><i class="fa-brands fa-instagram" /></a
               >
             </li>
             <li class="list-inline-item">
               <Link to={"#"} class="social-icon text-muted"
-                ><i class="fa-brands fa-facebook"></i></Link
+                ><i class="fa-brands fa-facebook" /></Link
               >
             </li>
             <li class="list-inline-item">
               <Link to={"#"} class="social-icon text-muted"
-                ><i class="fa-brands fa-tiktok"></i></Link
+                ><i class="fa-brands fa-tiktok" /></Link
               >
             </li>
           </ul>

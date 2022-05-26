@@ -1,6 +1,6 @@
 <script>
-  import { Container, Row, Col } from 'sveltestrap';
-  import Data from '../../Data/data'
+  import { Container, Row, Col } from 'sveltestrap'
+  import Data from '../Data/data'
 
   const { quote } =  Data.HOME_DATA
 </script>

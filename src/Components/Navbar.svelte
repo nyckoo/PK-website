@@ -81,16 +81,13 @@ window.addEventListener('scroll', (ev) => {
     }
   }
 
-  window.addEventListener('scroll', handleScroll, { passive: false })
-
-  export let extraclass;
-  
+  window.addEventListener('scroll', handleScroll, { passive: false })  
 </script>
 
 <!-- START NAVBAR -->
 <div>
   <nav
-    class={"navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-dark " + extraclass}
+    class={"navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-dark"}
     id="navbar"
   >
     <div class="container">

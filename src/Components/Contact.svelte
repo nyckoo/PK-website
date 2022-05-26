@@ -1,13 +1,9 @@
 <script>
-  import { Form, Row, Col, Input, Container } from 'sveltestrap'
-  import Data from '../Data/data'
+  import { Form, Row, Col, Input, Container } from "sveltestrap";
+  import Data from "../Data/data";
+  import { user } from "../Store/stores";
 
-  const {
-    description,
-    email_address,
-    phone_nr,
-    instagram
-  } = Data.CONTACT_DATA
+  const { description, email_address, phone_nr, instagram } = Data.CONTACT_DATA;
 </script>
 
 <section class="section" id="contact">
@@ -57,6 +53,7 @@
                     type="text"
                     class="form-control"
                     placeholder="Imię*"
+                    bind:value={$user.name}
                   />
                 </div>
               </Col>
@@ -69,6 +66,7 @@
                     type="email"
                     class="form-control"
                     placeholder="Adres e-mail*"
+                    bind:value={$user.email}
                   />
                 </div>
               </Col>
@@ -83,6 +81,7 @@
                     class="form-control"
                     id="subject"
                     placeholder="Temat wiadomości*"
+                    bind:value={$user.topic}
                   />
                 </div>
               </Col>
@@ -99,6 +98,7 @@
                     rows="4"
                     class="form-control"
                     placeholder="Treść wiadomości*"
+                    bind:value={$user.message}
                   />
                 </div>
               </Col>
@@ -111,7 +111,7 @@
                   type="submit"
                   id="submit"
                   name="send"
-                  class="submitBnt btn btn-primary"
+                  class="btn-primary"
                   value="Wyślij Wiadomość"
                 />
                 <div id="simple-msg" />
