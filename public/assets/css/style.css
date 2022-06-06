@@ -1799,7 +1799,7 @@ textarea.form-control {
 
 .bg-login {
   background-image: url(../images/cartographer.png);
-  height: 100vh;
+  height: 100%;
 }
 
 .login-form .form-control {

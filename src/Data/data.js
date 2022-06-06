@@ -23,30 +23,31 @@ const EBOOKS_DATA = {
     boldheading: "E-booki",
 
     u_list:[{
-        key: 1,
-        price: "59zł *",
-        title: "“5 warunków idealnego związku”",
-        short_description: "<i>(zdrowe relacje, rozwój osobisty)</i>",
-        description:"Zdania na temat tego co w związku jest najważniejsze, są podzielone. W tej książce nie stosuję podziału na „gorsze/lepsze” warunki, lecz opisuję wszystkie dokładnie z taką samą wartością, by uświadomić czytelnikowi, że nawet połączenie pasującego charakteru z ładną twarzą, nie zawsze wystarcza do zbudowania szczęśliwej relacji. Spełnienie wszystkich 5 warunków sprawia, że relacja zdobywa najniższe prawdopodobieństwo zerwania, a para czuje się ze sobą spełniona.",
-        img_name: "5_warunkow_idealnego_zwiazku"
+            key: 1,
+            price: "59zł *",
+            title: "“5 warunków idealnego związku”",
+            short_description: "<i>(zdrowe relacje, rozwój osobisty)</i>",
+            description:"Zdania na temat tego co w związku jest najważniejsze, są podzielone. W tej książce nie stosuję podziału na „gorsze/lepsze” warunki, lecz opisuję wszystkie dokładnie z taką samą wartością, by uświadomić czytelnikowi, że nawet połączenie pasującego charakteru z ładną twarzą, nie zawsze wystarcza do zbudowania szczęśliwej relacji. Spełnienie wszystkich 5 warunków sprawia, że relacja zdobywa najniższe prawdopodobieństwo zerwania, a para czuje się ze sobą spełniona.",
+            img_name: "5_warunkow_idealnego_zwiazku"
         },{
-        key: 2,
-        price: "19zł *",
-        title: "“30 nawyków szczęścia”",
-        short_description: "<i>(dobre samopoczucie, rozwój osobisty)</i>",
-        description:"Zbiór podstawowych nawyków, które pomogą Ci stać się szczęśliwą osobą. Opanowanie ich poprawia asertywność, pewność siebie, jakość codziennego fukcjonowania i zachęca do spojrzenia na świat z innej perspektywy.",
-        img_name: "30_nawykow_szczescia"
+            key: 2,
+            price: "39zł *",
+            title: "“Zrozum siebie”",
+            short_description: "<i>(filozofia, pewność siebie, rozwój osobisty)</i>",
+            description:"Jesteśmy tym - co myślimy, mówimy, robimy i wszystkim innym, czego doświadczamy. Ta książka pomoże Ci uświadomić sobie, jak bardzo środowisko ma na nas wszystkich wpływ, jak ślepo powtarzamy niektóre czynności i co możemy zrobić, by przejąć nad tym kontrolę. Zrozumienie siebie jest nieodłącznym elementem szczęścia.",
+            img_name: "zrozum_siebie"
         },{
-        key: 3,
-        price: "39zł *",
-        title: "“Zrozum siebie”",
-        short_description: "<i>(filozofia, pewność siebie, rozwój osobisty)</i>",
-        description:"Jesteśmy tym - co myślimy, mówimy, robimy i wszystkim innym, czego doświadczamy. Ta książka pomoże Ci uświadomić sobie, jak bardzo środowisko ma na nas wszystkich wpływ, jak ślepo powtarzamy niektóre czynności i co możemy zrobić, by przejąć nad tym kontrolę. Zrozumienie siebie jest nieodłącznym elementem szczęścia.",
-        img_name: "zrozum_siebie"
+            key: 3,
+            price: "19zł *",
+            title: "“30 nawyków szczęścia”",
+            short_description: "<i>(dobre samopoczucie, rozwój osobisty)</i>",
+            description:"Zbiór podstawowych nawyków, które pomogą Ci stać się szczęśliwą osobą. Opanowanie ich poprawia asertywność, pewność siebie, jakość codziennego fukcjonowania i zachęca do spojrzenia na świat z innej perspektywy.",
+            img_name: "30_nawykow_szczescia"
         },
     ],
 
     current_offer: "*promocyjna cena z okazji premiery obowiązuje do 30.06.2022",
+    packet: ""
 };
 
 const COACHING_DATA = {
@@ -55,9 +56,7 @@ const COACHING_DATA = {
         text: [
         `Coaching jest przemyślanym procesem, bazującym na cyklu odpowiednio prowadzonych rozmów z osobą coachowaną, w celu stworzenia dla niej warunków do indywidualnego rozwoju, świadomych działań nastawionych na rezultaty i trwałych zmian w pożądanym kierunku. To proces auto przywództwa, który umożliwia ludziom uzyskanie świadomości kim są, co robią, dlaczego to robią i gdzie chcą dojść.`,
 
-        `Głównym celem coachingu, jest pomoc ludziom w obiektywnym ustaleniu, gdzie znajdują się w chwili obecnej, a gdzie chcą się znaleźć w przyszłości oraz stworzenie planu, który pozwoli im przejść z punktu A do punktu B.`,
-        
-        `Coach nie podejmuje decyzji za osobę coachowaną, lecz korzystając z odpowiednich narzędzi psychologicznych, które pod każdego wybiera indywidualnie (na bazie tego, co usłyszał podczas rozmowy) - wyjmuje z niej to, co najlepsze, by dzięki jej własnym zasobom i wartościom, wypracować postawiony cel.`,
+        `Głównym celem coachingu, jest pomoc ludziom w obiektywnym ustaleniu, gdzie znajdują się w chwili obecnej, a gdzie chcą się znaleźć w przyszłości oraz stworzenie planu, który pozwoli im przejść z punktu A do punktu B. Coach nie podejmuje decyzji za osobę coachowaną, lecz korzystając z odpowiednich narzędzi psychologicznych, które pod każdego wybiera indywidualnie (na bazie tego, co usłyszał podczas rozmowy) - wyjmuje z niej to, co najlepsze, by dzięki jej własnym zasobom i wartościom, wypracować postawiony cel.`,
         
         `Cechy charakterystyczne coachingu:`,
         ],
@@ -74,7 +73,7 @@ const COACHING_DATA = {
         ]
     },
     {
-        text_one: `Każdy może zapisać się na taką sesję. Najczęściej jednak pracuję z osobami, które:`,
+        text_one: `Coaching zaczyna się tam, gdzie pojawia się potrzeba zmiany. Zatem każdy może zapisać się na taką sesję. Najczęściej jednak pracuję z osobami, które:`,
         u_list: [
             "mają jakieś bariery lub negatywne przekonania o sobie",
             "szukają rozwiązań na swoje sprawy",
@@ -102,13 +101,13 @@ const COACHING_DATA = {
 
         `Wybrałem ten system, dlatego że stosowałem jego narzędzia (na sobie i innych), zanim w ogóle poznałem, czym on jest. Narzędzia te pomogły mi w staniu się tym, kim jestem dzisiaj, dlatego wiem, że system działa i w połączeniu z moimi umiejętnościami, jestem w stanie pomóc też innym w ich drodze do spełnienia.`,
         
-        `Wyobraź sobie, że w Twoim życiu wszystko się układa, masz nad wszystkim kontrolę, czujesz się “pełny(a)” i akceptujesz to, kim jesteś oraz jak jest dookoła Ciebie. Każdego dnia budzisz się z uśmiechem i masz chęci do działania. Nawet jeśli jest kilka rzeczy do poprawy, to i tak czujesz, że żyjesz. Tak wygląda moje życie - i Twoje też tak może wyglądać.`,
+        `Wyobraź sobie, że w Twoim życiu wszystko się układa, masz nad wszystkim kontrolę, czujesz się “pełny(a)” i akceptujesz to, kim jesteś oraz jak jest dookoła Ciebie. Każdego dnia budzisz się z uśmiechem i masz chęci do działania. Nawet jeśli jest kilka rzeczy do poprawy, to i tak czujesz, że żyjesz. Tak widzę swoje życie - i Twoje też tak może wyglądać.`,
         
-        `Według mnie, praca, która jakkolwiek wpływa na nas toksycznie, nie jest warta żadnego czasu. Nic też nie jest warty związek, w którym zamiast przyjaźni, występuje wrogość i częste kłótnie. Żadna minuta nie jest warta pesymizmu, który utrzymuje nas z dala od radości. By móc zbudować sobie lepsze życie, lepszą rzeczywistość, potrzebujemy uporządkować aktualne sprawy, wzmocnić poczucie własnej wartości, stać się asertywnym i pewnym siebie człowiekiem oraz nauczyć się życzliwości - to wszystko prezentuję w swoim życiu prywatnym, więc nie umawiasz się z teoretykiem, lecz kimś, kto w praktyce wyznaje wartości człowieka szczęśliwego. Poprawiając jedną sferę życia, wpływa ona na kilka innych - jestem kimś, kto doskonale rozumie tę regułę i pomagam wdrażać to w życie moich klientów. Z odpowiednim nastawieniem i cierpliwością w sercu, możesz zbudować swoje lepsze życie - a coaching jest do tego najlepszym narzędziem.`,
+        `Według mnie, praca, która jakkolwiek wpływa na nas toksycznie, nie jest warta żadnego czasu. Nic też nie jest warty związek, w którym zamiast przyjaźni, występuje wrogość i częste kłótnie. Żadna minuta nie jest warta pesymizmu, który utrzymuje nas z dala od radości. By móc zbudować sobie lepsze życie, lepszą rzeczywistość, potrzebujemy uporządkować aktualne sprawy, wzmocnić poczucie własnej wartości, stać się asertywnym i pewnym siebie człowiekiem oraz nauczyć się życzliwości - to wszystko prezentuję w swoim życiu prywatnym, więc nie umawiasz się z teoretykiem, lecz kimś, kto w praktyce wyznaje wartości człowieka szczęśliwego. Poprawiając jedną sferę życia, wpływa ona na kilka innych - jestem kimś, kto doskonale rozumie tę regułę i pomagam wdrażać to w codzienność moich klientów. Z odpowiednim nastawieniem i cierpliwością w sercu, możesz zbudować swoją lepszą rzeczywistość - a coaching jest do tego najlepszym narzędziem.`,
 
-        `Moje motto: <i>“Mała szansa na osiągnięcie celu, nie powinna zniechęcać do podjęcia próby”</i>.`,
+        `<i>“Mała szansa na osiągnięcie celu, nie powinna zniechęcać do podjęcia próby”.</i>.`,
         
-        `Zapraszam Cię do skorzystania z mojej oferty - jestem pewny, że tak jak moi dotychczasowi klienci, już po dwóch-trzech spotkaniach dostrzeżesz znaczną różnicę (niektórzy nawet po jednej sesji osiągają swój cel). A jeśli nigdy nie pracowałeś/aś w coachingu i masz wątpliwości - skontaktuj się ze mną i skorzystaj ze wstępnej, całkowicie darmowej konsultacji. Porozmawiamy o Twoich potrzebach, oczekiwaniach i odpowiem na Twoje pytania.`,
+        `Zapraszam Cię do skorzystania z oferty - jestem pewny, że tak jak moi dotychczasowi klienci, już po dwóch-trzech spotkaniach dostrzeżesz znaczną różnicę (niektórzy nawet po jednej sesji osiągają swój cel). A jeśli nigdy nie pracowałeś/aś w coachingu i masz wątpliwości - skontaktuj się ze mną i skorzystaj ze wstępnej, całkowicie darmowej konsultacji. Porozmawiamy o Twoich potrzebach, oczekiwaniach i odpowiem na pytania.`,
         ],
     },
     ]

@@ -1,87 +1,88 @@
 <!-- Navbar component -->
 <script>
-
-  import { scrollto } from 'svelte-scrollto'
-  import { onMount } from 'svelte'
-  import { Button } from "sveltestrap"
-  import { Link } from 'svelte-routing'
+  import { scrollto } from "svelte-scrollto";
+  import { onMount } from "svelte";
+  import { Button } from "sveltestrap";
+  import { Link } from "svelte-routing";
 
   function windowScroll() {
     const navbar = document.getElementById("navbar");
     if (
-        document.body.scrollTop >= 50 ||
-        document.documentElement.scrollTop >= 50
+      document.body.scrollTop >= 50 ||
+      document.documentElement.scrollTop >= 50
     ) {
-        navbar.classList.add("nav-sticky");
+      navbar?.classList.add("nav-sticky");
     } else {
-        navbar.classList.remove("nav-sticky");
+      navbar?.classList.remove("nav-sticky");
     }
 
-    if (
+    if (!!document.getElementById("back-to-top")) {
+      if (
         document.body.scrollTop > 100 ||
         document.documentElement.scrollTop > 100
-    ) {
-        // document.getElementById("back-to-top").style.display = "inline";
-    } else {
-        // document.getElementById("back-to-top").style.display = "none";
+      ) {
+        document.getElementById("back-to-top").style.display = "inline";
+      } else {
+        document.getElementById("back-to-top").style.display = "none";
+      }
     }
-}
+  }
 
-window.addEventListener('scroll', (ev) => {
+  window.addEventListener("scroll", (ev) => {
     ev.preventDefault();
     windowScroll();
-})
+  });
 
   /**
    * Toggle menu
    */
   const toggleMenu = () => {
-    document.getElementById('navbarCollapse').classList.toggle('show')
-  }
+    document.getElementById("navbarCollapse").classList.toggle("show");
+  };
 
   /**
    * Component mount
    */
   onMount(() => {
-    var section = document.querySelectorAll('.common-section')
+    var section = document.querySelectorAll(".common-section");
 
-    var sections = {}
-    var i = 0
+    var sections = {};
+    var i = 0;
 
     Array.prototype.forEach.call(section, function (e) {
-      sections[e.id] = e.offsetTop
-    })
+      sections[e.id] = e.offsetTop;
+    });
 
     window.onscroll = function () {
       var scrollPosition =
-        document.documentElement.scrollTop || document.body.scrollTop
+        document.documentElement.scrollTop || document.body.scrollTop;
       for (i in sections) {
         if (sections[i] <= scrollPosition) {
-          document.querySelector('.active').setAttribute('class', ' ')
+          document.querySelector(".active").setAttribute("class", " ");
           document
-            .querySelector('a[href*=' + i + ']')
-            .setAttribute('class', 'active')
+            .querySelector("a[href*=" + i + "]")
+            .setAttribute("class", "active");
         }
       }
-    }
-  })
+    };
+  });
 
   /**
    * Scroll method
    */
   const handleScroll = () => {
-    var navbar = document.getElementById('navbar')
+    var navbar = document.getElementById("navbar");
     if (
       document.body.scrollTop > 50 ||
       document.documentElement.scrollTop > 50
     ) {
-      navbar.classList.add('is-sticky')
+      navbar?.classList.add("is-sticky");
     } else {
-      navbar.classList.remove('is-sticky')
+      navbar?.classList.remove("is-sticky");
     }
-  }
+  };
 
-  window.addEventListener('scroll', handleScroll, { passive: false })  
+  window.addEventListener("scroll", handleScroll, { passive: false });
 </script>
 
 <!-- START NAVBAR -->
@@ -112,16 +113,23 @@ window.addEventListener('scroll', (ev) => {
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mx-auto" id="navbar-navlist">
           <li class="nav-item">
-            <a class="nav-link" use:scrollto={"#home"} href={"#about"}>O mnie</a>
+            <a class="nav-link" use:scrollto={"#home"} href={"#about"}>O mnie</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link" use:scrollto={"#ebooks"} href={"#ebooks"}>E-booki</a>
+            <a class="nav-link" use:scrollto={"#ebooks"} href={"#ebooks"}
+              >E-booki</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link" use:scrollto={"#coaching"} href={"#coaching"}>Coaching</a>
+            <a class="nav-link" use:scrollto={"#coaching"} href={"#coaching"}
+              >Coaching</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link" use:scrollto={"#contact"} href={"#contact"}>Kontakt</a>
+            <a class="nav-link" use:scrollto={"#contact"} href={"#contact"}
+              >Kontakt</a
+            >
           </li>
         </ul>
         <!-- end ul -->
@@ -134,7 +142,7 @@ window.addEventListener('scroll', (ev) => {
             -->
             <li class="list-inline-item">
               <Link to="koszyk" class="shopping-cart">
-                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-solid fa-cart-shopping" />
               </Link>
             </li>
           </ul>

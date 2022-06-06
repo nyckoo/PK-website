@@ -22,24 +22,22 @@
         <div class="ps-4 pe-4">
           <div class="mt-4">
             <div>
-              <h5 class="mb-0 f-20 font-weight-600">
+              <h5 class="mb-4 f-20 font-weight-600">
                 {questions[0]}
               </h5>
             </div>
-            <div class="mt-4 p-4">
+            <div class="text-start">
               {#each answers[0].text as item}
-                <div class="mt-3">
-                  <p class="text-muted">
-                    {item}
-                  </p>
-                </div>
+                <p class="text-muted">
+                  {item}
+                </p>
               {/each}
             </div>
             <div class="container">
               <div class="row justify-content-center">
                 <div class="col-sm-4">
                   {#each answers[0].u_list as item}
-                    <p class="text-muted text-center max">
+                    <p class="text-muted text-start max">
                       • {item}
                     </p>
                   {/each}
@@ -59,7 +57,7 @@
               </h5>
             </div>
             <div class="mt-4">
-              <p class="text-muted text-center">
+              <p class="text-muted text-start">
                 {answers[1].text_one}
               </p>
             </div>
@@ -67,7 +65,7 @@
               <div class="row justify-content-center">
                 <div class="col-sm-4">
                   {#each answers[1].u_list as item}
-                    <p class="text-muted text-center max">
+                    <p class="text-muted text-start max">
                       • {item}
                     </p>
                   {/each}
@@ -127,7 +125,7 @@
               </h5>
             </div>
             {#each answers[2].u_list as item}
-              <div class="mt-3">
+              <div class="mt-3 text-start">
                 <p class="text-muted">
                   {@html item}
                 </p>

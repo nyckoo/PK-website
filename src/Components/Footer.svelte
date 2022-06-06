@@ -24,9 +24,9 @@
       document.body.scrollTop > 100 ||
       document.documentElement.scrollTop > 100
     ) {
-      document.getElementById("back-to-top").style.display = "inline";
+      // document.getElementById("back-to-top").style.display = "inline";
     } else {
-      document.getElementById("back-to-top").style.display = "none";
+      // document.getElementById("back-to-top").style.display = "none";
     }
   }
 

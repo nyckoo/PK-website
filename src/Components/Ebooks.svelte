@@ -10,7 +10,6 @@
 
   products.subscribe((val) => {
     items = val;
-    console.log(items);
   });
 </script>
 
@@ -28,11 +27,11 @@
     <Row class="mt-5 text-center">
       {#each u_list as item}
         <Col md={4}>
-          <div class="services-box">
+          <div class="services-box text-start">
             <div class="mt-3">
               <img
                 src="assets\images\ebooks\{item.img_name}.jpeg"
-                alt="."
+                alt=""
                 width="280px"
               />
               <h5 class="services-title fw-bold mt-5 mb-4">{item.title}</h5>

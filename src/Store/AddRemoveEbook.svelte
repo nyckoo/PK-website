@@ -10,15 +10,21 @@
   class="btn-primary"
   on:click={() => {
     products.update((prevProducts) => {
-      if (item.key in prevProducts) {
-        delete prevProducts[item.key];
+      console.log(prevProducts);
+      if (prevProducts.map((product) => product.id).includes(item.key)) {
+        return prevProducts.filter((product) => product.id !== item.key);
       } else {
-        prevProducts[item.key] = {
+        prevProducts.push({
           id: item.key,
           price: item.price,
-        };
+          title: item.title,
+          img: item.img_name,
+        });
       }
       return prevProducts;
     });
-  }}>{item.key in items ? "Usuń z koszyka" : "Dodaj do koszyka"}</Button
+  }}
+  >{items.map((val) => val.id).includes(item.key)
+    ? "Usuń z koszyka"
+    : "Dodaj do koszyka"}</Button
 >

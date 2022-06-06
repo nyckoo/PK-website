@@ -114,7 +114,6 @@
                   class="btn-primary"
                   value="Wyślij Wiadomość"
                 />
-                <div id="simple-msg" />
               </Col>
               <!-- end col -->
             </Row>
