@@ -1,7 +1,7 @@
 <script>
   import { Form, Row, Col, Input, Container } from "sveltestrap";
   import Data from "../Data/data";
-  import { user } from "../Store/stores";
+  import { user } from "../store/stores";
 
   const { description, email_address, phone_nr, instagram } = Data.CONTACT_DATA;
 </script>
@@ -23,7 +23,7 @@
     <!-- end row -->
     <Row>
       <Col lg={4}>
-        <div class="mt-4 pt-4">
+        <div class="mt-4 pt-4 d-flex flex-column justify-content-center">
           <p class="text-muted mt-4">
             <span class="fw-bold ">Adres e-mail:</span><br />
             <span class="d-block mt-2">{email_address}</span>

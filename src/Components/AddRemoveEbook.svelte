@@ -1,6 +1,6 @@
 <script>
   import { Button } from "sveltestrap";
-  import { products } from "../Store/stores";
+  import { products } from "../store/stores";
 
   export let item;
   export let items;
@@ -18,6 +18,7 @@
           id: item.key,
           price: item.price,
           title: item.title,
+          desc: item.short_description,
           img: item.img_name,
         });
       }

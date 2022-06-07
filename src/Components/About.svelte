@@ -14,7 +14,7 @@
         <h3 class="mt-2 title mx-auto mb-5">
           {pretext}
         </h3>
-        <div class="about-box text-start">
+        <div class="about-box text-wrap">
           <!-- Make each piece html customizable -->
           {#each text_list as item}
             <div class="mt-3 ">

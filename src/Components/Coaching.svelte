@@ -26,7 +26,7 @@
                 {questions[0]}
               </h5>
             </div>
-            <div class="text-start">
+            <div class="text-wrap">
               {#each answers[0].text as item}
                 <p class="text-muted">
                   {item}
@@ -37,7 +37,7 @@
               <div class="row justify-content-center">
                 <div class="col-sm-4">
                   {#each answers[0].u_list as item}
-                    <p class="text-muted text-start max">
+                    <p class="text-muted text-wrap max">
                       • {item}
                     </p>
                   {/each}
@@ -57,7 +57,7 @@
               </h5>
             </div>
             <div class="mt-4">
-              <p class="text-muted text-start">
+              <p class="text-muted text-wrap">
                 {answers[1].text_one}
               </p>
             </div>
@@ -65,7 +65,7 @@
               <div class="row justify-content-center">
                 <div class="col-sm-4">
                   {#each answers[1].u_list as item}
-                    <p class="text-muted text-start max">
+                    <p class="text-muted text-wrap max">
                       • {item}
                     </p>
                   {/each}
@@ -125,7 +125,7 @@
               </h5>
             </div>
             {#each answers[2].u_list as item}
-              <div class="mt-3 text-start">
+              <div class="mt-3 text-wrap">
                 <p class="text-muted">
                   {@html item}
                 </p>

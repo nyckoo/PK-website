@@ -1,8 +1,8 @@
 <script>
   import { Container, Row, Col, Button } from "sveltestrap";
   import Data from "../Data/data";
-  import { products } from "../Store/stores";
-  import AddRemoveEbook from "../Store/AddRemoveEbook.svelte";
+  import { products } from "../store/stores";
+  import AddRemoveEbook from "./AddRemoveEbook.svelte";
 
   const { heading, boldheading, u_list, current_offer } = Data.EBOOKS_DATA;
 
@@ -27,16 +27,16 @@
     <Row class="mt-5 text-center">
       {#each u_list as item}
         <Col md={4}>
-          <div class="services-box text-start">
+          <div class="services-box text-wrap">
             <div class="mt-3">
               <img
                 src="assets\images\ebooks\{item.img_name}.jpeg"
                 alt=""
-                width="280px"
+                width="100%"
               />
               <h5 class="services-title fw-bold mt-5 mb-4">{item.title}</h5>
               <h6 class="services-subtitle text-dark fw-bold mb-4">
-                {item.price}
+                {item.price} *
               </h6>
               <!-- Button Add/Remove Item -->
               <AddRemoveEbook {item} {items} />

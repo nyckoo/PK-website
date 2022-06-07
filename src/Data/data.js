@@ -24,21 +24,21 @@ const EBOOKS_DATA = {
 
     u_list:[{
             key: 1,
-            price: "59zł *",
+            price: "59zł",
             title: "“5 warunków idealnego związku”",
             short_description: "<i>(zdrowe relacje, rozwój osobisty)</i>",
             description:"Zdania na temat tego co w związku jest najważniejsze, są podzielone. W tej książce nie stosuję podziału na „gorsze/lepsze” warunki, lecz opisuję wszystkie dokładnie z taką samą wartością, by uświadomić czytelnikowi, że nawet połączenie pasującego charakteru z ładną twarzą, nie zawsze wystarcza do zbudowania szczęśliwej relacji. Spełnienie wszystkich 5 warunków sprawia, że relacja zdobywa najniższe prawdopodobieństwo zerwania, a para czuje się ze sobą spełniona.",
             img_name: "5_warunkow_idealnego_zwiazku"
         },{
             key: 2,
-            price: "39zł *",
+            price: "39zł",
             title: "“Zrozum siebie”",
             short_description: "<i>(filozofia, pewność siebie, rozwój osobisty)</i>",
             description:"Jesteśmy tym - co myślimy, mówimy, robimy i wszystkim innym, czego doświadczamy. Ta książka pomoże Ci uświadomić sobie, jak bardzo środowisko ma na nas wszystkich wpływ, jak ślepo powtarzamy niektóre czynności i co możemy zrobić, by przejąć nad tym kontrolę. Zrozumienie siebie jest nieodłącznym elementem szczęścia.",
             img_name: "zrozum_siebie"
         },{
             key: 3,
-            price: "19zł *",
+            price: "19zł",
             title: "“30 nawyków szczęścia”",
             short_description: "<i>(dobre samopoczucie, rozwój osobisty)</i>",
             description:"Zbiór podstawowych nawyków, które pomogą Ci stać się szczęśliwą osobą. Opanowanie ich poprawia asertywność, pewność siebie, jakość codziennego fukcjonowania i zachęca do spojrzenia na świat z innej perspektywy.",

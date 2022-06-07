@@ -4,6 +4,7 @@
   import { onMount } from "svelte";
   import { Button } from "sveltestrap";
   import { Link } from "svelte-routing";
+  import { products } from "../store/stores";
 
   function windowScroll() {
     const navbar = document.getElementById("navbar");
@@ -83,6 +84,12 @@
   };
 
   window.addEventListener("scroll", handleScroll, { passive: false });
+
+  let itemsCount = 0;
+
+  products.subscribe((items) => {
+    itemsCount = items.length;
+  });
 </script>
 
 <!-- START NAVBAR -->
@@ -92,20 +99,26 @@
     id="navbar"
   >
     <div class="container">
-      <a class="navbar-brand" href={""}>Najpierw Ja</a>
+      <a class="navbar-brand" href={"/"}>Najpierw Ja</a>
 
-      <ul class="list-inline mb-0" id="navbarIconsCollapsed">
+      <ul class="list-inline m-0" id="navbarIconsCollapsed">
         <li class="list-inline-item">
           <!-- Shopping cart button -->
-          <Button class="navbar-toggler" href={"koszyk"}>
-            <span class="fa-solid fa-cart-shopping" />
-          </Button>
+          <Link to="koszyk">
+            <Button class="navbar-toggler position-relative">
+              <span
+                class="position-absolute translate-middle rounded-3 bg-warning items-amount"
+                >{itemsCount}</span
+              >
+              <div class="fa-solid fa-cart-shopping" />
+            </Button>
+          </Link>
         </li>
 
         <li class="list-inline-item">
           <!-- Menu button -->
           <Button class="navbar-toggler" on:click={toggleMenu}>
-            <span class="fa-solid fa-bars" />
+            <div class="fa-solid fa-bars" />
           </Button>
         </li>
       </ul>
@@ -134,21 +147,43 @@
         </ul>
         <!-- end ul -->
         <div>
-          <ul class="text-end list-unstyled list-inline mb-0 nav-social">
-            <!--
-            <li class="list-inline-item text-white nav-number">
-              <i class="ti-mobile" /> <span>+1 234 567 789</span>
-            </li>
-            -->
+          <ul class="text-end list-inline mb-0 nav-social">
             <li class="list-inline-item">
               <Link to="koszyk" class="shopping-cart">
-                <i class="fa-solid fa-cart-shopping" />
+                <div>
+                  <i class="fa-solid fa-cart-shopping fa-lg" />
+                  <span
+                    class="position-fixed translate-middle rounded-pill bg-warning items-amount"
+                  >
+                    {itemsCount}
+                  </span>
+                </div>
               </Link>
             </li>
           </ul>
-          <!-- end ul -->
         </div>
       </div>
     </div>
   </nav>
 </div>
+
+<style>
+  @media (max-width: 992px) {
+    .items-amount {
+      width: 20px;
+      height: 25px;
+      top: 10px;
+      margin-left: 25px;
+      color: white;
+      padding: 2px 5px;
+    }
+  }
+
+  @media (min-width: 993px) {
+    .items-amount {
+      top: 20px;
+      width: 20px;
+      height: 30px;
+    }
+  }
+</style>
