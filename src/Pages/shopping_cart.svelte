@@ -19,7 +19,7 @@
 
 <NavbarShort />
 
-<section class="d-flex section bg-login full-height align-items-center">
+<section class="d-flex section bg-subsite full-height align-items-center">
   <Container>
     <div class="bg-white p-4 rounded bg-light">
       <p class="fs-2">Twój koszyk:</p>
