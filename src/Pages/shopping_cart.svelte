@@ -3,7 +3,7 @@
 
   import { Form, Input, Label, Container, Row, Col, Button } from "sveltestrap";
   import NavbarShort from "../Components/NavbarShort.svelte";
-  import { products } from "../../src/store/stores";
+  import { products } from "../store/stores";
 
   let items;
   products.subscribe((prods) => {
