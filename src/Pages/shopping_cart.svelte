@@ -3,7 +3,7 @@
 
   import { Form, Input, Label, Container, Row, Col, Button } from "sveltestrap";
   import NavbarShort from "../Components/NavbarShort.svelte";
-  import { products } from "../store/stores";
+  import { products } from "../../src/store/stores";
 
   let items;
   products.subscribe((prods) => {
@@ -13,7 +13,7 @@
 
   $: total = items.reduce(
     (prev, current) => prev + +current.price.substr(0, 2),
-    0
+    "-"
   );
 </script>
 

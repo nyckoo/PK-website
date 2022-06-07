@@ -3,7 +3,6 @@
   import { onMount } from "svelte";
   import { Button } from "sveltestrap";
   import { Link } from "svelte-routing";
-  import { products } from "../store/stores";
 
   function windowScroll() {
     const navbar = document.getElementById("navbar");

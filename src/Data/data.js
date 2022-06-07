@@ -105,7 +105,7 @@ const COACHING_DATA = {
         
         `Według mnie, praca, która jakkolwiek wpływa na nas toksycznie, nie jest warta żadnego czasu. Nic też nie jest warty związek, w którym zamiast przyjaźni, występuje wrogość i częste kłótnie. Żadna minuta nie jest warta pesymizmu, który utrzymuje nas z dala od radości. By móc zbudować sobie lepsze życie, lepszą rzeczywistość, potrzebujemy uporządkować aktualne sprawy, wzmocnić poczucie własnej wartości, stać się asertywnym i pewnym siebie człowiekiem oraz nauczyć się życzliwości - to wszystko prezentuję w swoim życiu prywatnym, więc nie umawiasz się z teoretykiem, lecz kimś, kto w praktyce wyznaje wartości człowieka szczęśliwego. Poprawiając jedną sferę życia, wpływa ona na kilka innych - jestem kimś, kto doskonale rozumie tę regułę i pomagam wdrażać to w codzienność moich klientów. Z odpowiednim nastawieniem i cierpliwością w sercu, możesz zbudować swoją lepszą rzeczywistość - a coaching jest do tego najlepszym narzędziem.`,
 
-        `<i>“Mała szansa na osiągnięcie celu, nie powinna zniechęcać do podjęcia próby”.</i>.`,
+        `<i>“Mała szansa na osiągnięcie celu, nie powinna zniechęcać do podjęcia próby”.</i>`,
         
         `Zapraszam Cię do skorzystania z oferty - jestem pewny, że tak jak moi dotychczasowi klienci, już po dwóch-trzech spotkaniach dostrzeżesz znaczną różnicę (niektórzy nawet po jednej sesji osiągają swój cel). A jeśli nigdy nie pracowałeś/aś w coachingu i masz wątpliwości - skontaktuj się ze mną i skorzystaj ze wstępnej, całkowicie darmowej konsultacji. Porozmawiamy o Twoich potrzebach, oczekiwaniach i odpowiem na pytania.`,
         ],
