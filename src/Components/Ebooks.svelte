@@ -1,7 +1,7 @@
 <script>
   import { Container, Row, Col, Button } from "sveltestrap";
   import Data from "../Data/data";
-  import { products } from "../store/stores";
+  import { products } from "../Store/stores";
   import AddRemoveEbook from "./AddRemoveEbook.svelte";
 
   const { heading, boldheading, u_list, current_offer } = Data.EBOOKS_DATA;

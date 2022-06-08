@@ -1,6 +1,6 @@
 <script>
   import { Button } from "sveltestrap";
-  import { products } from "../store/stores";
+  import { products } from "../Store/stores";
 
   export let item;
   export let items;

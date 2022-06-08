@@ -1,7 +1,7 @@
 <script>
   import { Form, Row, Col, Input, Container } from "sveltestrap";
   import Data from "../Data/data";
-  import { user } from "../store/stores";
+  import { user } from "../Store/stores";
 
   const { description, email_address, phone_nr, instagram } = Data.CONTACT_DATA;
 </script>
