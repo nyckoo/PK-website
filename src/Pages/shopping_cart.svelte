@@ -13,7 +13,7 @@
 
   $: total = items.reduce(
     (prev, current) => prev + +current.price.substr(0, 2),
-    "-"
+    0
   );
 </script>
 
@@ -45,7 +45,7 @@
         >
           <div class="flex-row total">
             <p class="mt-3 fs-2">
-              Razem: {total}zł
+              Razem: {total + "zł"}
             </p>
           </div>
           <div class="flex-row">
@@ -56,16 +56,3 @@
     </div>
   </Container>
 </section>
-
-<style>
-  .full-height {
-    min-height: 100vh;
-  }
-
-  @media (max-width: 768px) {
-    .scale-img {
-      width: 100%;
-      height: auto;
-    }
-  }
-</style>

@@ -1945,7 +1945,9 @@ ul.pattern .color6 {
     margin: 0px;
     color: rgba(255, 255, 255, 0.6);
   }
-  /* .navbar-custom > .container {
+
+  /*
+  .navbar-custom > .container {
     width: 90%;
   } */
   .navbar-white .navbar-toggler {
@@ -2042,4 +2044,34 @@ ul.pattern .color6 {
   background-color: #ff546c !important;
   position: relative !important;
   top: 25px !important;
+}
+
+.full-height {
+  min-height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .scale-img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar .items-amount {
+    width: 20px;
+    height: 25px;
+    top: 10px;
+    margin-left: 25px;
+    color: white;
+    padding: 2px 5px;
+  }
+}
+
+@media (min-width: 993px) {
+  .navbar .items-amount {
+    top: 20px;
+    width: 20px;
+    height: 30px;
+  }
 }

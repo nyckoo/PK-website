@@ -166,24 +166,3 @@
     </div>
   </nav>
 </div>
-
-<style>
-  @media (max-width: 992px) {
-    .items-amount {
-      width: 20px;
-      height: 25px;
-      top: 10px;
-      margin-left: 25px;
-      color: white;
-      padding: 2px 5px;
-    }
-  }
-
-  @media (min-width: 993px) {
-    .items-amount {
-      top: 20px;
-      width: 20px;
-      height: 30px;
-    }
-  }
-</style>
