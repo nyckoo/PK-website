@@ -1,5 +1,6 @@
 <script>
   import { Link } from "svelte-routing";
+  import axios from "axios";
 
   import { Form, Input, Label, Container, Row, Col, Button } from "sveltestrap";
   import NavbarShort from "../Components/NavbarShort.svelte";
@@ -10,6 +11,12 @@
     console.log(prods);
     items = prods;
   });
+
+  const handleClick = async () => {
+    axios.post("https://e6af-176-115-80-91.eu.ngrok.io/transactions", {
+      products: items.map((item) => item.id),
+    });
+  };
 
   $: total = items.reduce(
     (prev, current) => prev + +current.price.substr(0, 2),
@@ -45,11 +52,12 @@
         >
           <div class="flex-row total">
             <p class="mt-3 fs-2">
+              <!-- {#if total } -->
               Razem: {total + "zł"}
             </p>
           </div>
           <div class="flex-row">
-            <Button class="btn-primary">Zapłać</Button>
+            <Button class="btn-primary" on:click={handleClick}>Zapłać</Button>
           </div>
         </div>
       </Row>

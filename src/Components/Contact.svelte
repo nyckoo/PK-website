@@ -78,6 +78,7 @@
                 <div class="form-group mt-2">
                   <Input
                     type="text"
+                    multiple
                     class="form-control"
                     id="subject"
                     placeholder="Temat wiadomości*"
@@ -92,10 +93,10 @@
               <Col lg={12}>
                 <div class="form-group mt-2">
                   <Input
-                    type="text"
+                    type="textarea"
                     name="comments"
                     id="comments"
-                    rows="4"
+                    rows={8}
                     class="form-control"
                     placeholder="Treść wiadomości*"
                     bind:value={$user.message}
