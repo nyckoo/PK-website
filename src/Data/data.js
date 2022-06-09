@@ -26,7 +26,7 @@ const EBOOKS_DATA = {
             key: 1,
             price: "59zł",
             title: "“5 warunków idealnego związku”",
-            short_description: "<i>(zdrowe relacje, rozwój osobisty)</i>",
+            short_description: "<i>(zdrowe relacje, pewność siebie, typy osobowości)</i>",
             description:"Zdania na temat tego co w związku jest najważniejsze, są podzielone. W tej książce nie stosuję podziału na „gorsze/lepsze” warunki, lecz opisuję wszystkie dokładnie z taką samą wartością, by uświadomić czytelnikowi, że nawet połączenie pasującego charakteru z ładną twarzą, nie zawsze wystarcza do zbudowania szczęśliwej relacji. Spełnienie wszystkich 5 warunków sprawia, że relacja zdobywa najniższe prawdopodobieństwo zerwania, a para czuje się ze sobą spełniona.",
             img_name: "5_warunkow_idealnego_zwiazku"
         },{

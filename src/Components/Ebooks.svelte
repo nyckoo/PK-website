@@ -40,7 +40,7 @@
               </h6>
               <!-- Button Add/Remove Item -->
               <AddRemoveEbook {item} {items} />
-              <p class="services-subtitle text-muted mt-4">
+              <p class="services-subtitle text-muted text-start mt-4">
                 {item.description}
               </p>
               <p class="services-subtitle text-muted mt-2">
