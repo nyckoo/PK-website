@@ -6,13 +6,13 @@ const ABOUT_DATA = {
     pretext: "Kim jestem:",
     text_list: [`Cześć! Nazywam się Paweł Kowalski.`,
 
-    `Większość osób kojarzy mnie z social mediów, pod pseudonimem “najpierw ja”. W internecie oraz w życiu prywatnym, określam siebie jako osobę szczęśliwą i otwartą na rozmowę. To mój naturalny talent - potrafię każdego dnia poznać kogoś nowego i szczerze się nim zainteresować. Na tym też buduję swoją markę - uwielbiam poznawać drugiego człowieka takim, jakim jest, bez oceniania go, ponieważ rozumiem, że każdy ma swoje indywidualne wartości i potrzeby.`,
+    `Większość osób kojarzy mnie z social mediów, pod pseudonimem “najpierw ja”. W internecie oraz w życiu prywatnym, określam siebie jako osobę szczęśliwą i otwartą na rozmowę. To mój naturalny talent - potrafię każdego dnia poznać kogoś nowego, szczerze się nim zainteresować i przede wszystkim nie oceniać, ponieważ rozumiem, że każdy ma swoje indywidualne wartości i potrzeby.`,
     
     `Od kiedy założyłem profil <strong>@najpierw_ja</strong>, codziennie dzielę się wiedzą na temat kochania siebie, bliskich relacji, drogi do szczęścia, pewności siebie i spraw biznesowych - to moje główne tematy, w których edukuję się od lat (przede wszystkim w praktyce).`,
     
-    `Jak to się stało, że robię to, co robię? Czasem mam wrażenie, że nie ja wybrałem tę ścieżkę życia, a to ta ścieżka życia wybrała mnie - ponieważ zawody które wykonuję, związane są z moimi pasjami. Zaczęło się lata temu, od zwykłych wyjść na kawę i szczerego dzielenia wnioskami o życiu. Ludzie, z którymi się spotykałem, mówili mi, że taka rozmowa bardzo pomaga im poukładać swoje sprawy i powinienem pomyśleć o psychologii, coachingu lub jakiejś innej formie pracy, w której miałbym kontakt z klientem 1na1, bo na pewno się w niej spełnię. Na początku przyjmowałem to tylko jako komplement, lecz z czasem zacząłem rozumieć, że to naprawdę jest coś, czym chcę się zajmować.`,
+    `Jak to się stało, że robię to, co robię? Czasem mam wrażenie, że nie ja wybrałem tę ścieżkę życia, a to ta ścieżka wybrała mnie - ponieważ zawody które wykonuję, oparte są na moich naturalnych zdolnościach. Zaczęło się lata temu, od zwykłych wyjść na kawę i szczerego dzielenia wnioskami o życiu. Ludzie, z którymi się spotykałem, mówili mi, że taka rozmowa pomaga im poukładać swoje sprawy i powinienem pomyśleć o psychologii, coachingu lub jakiejś innej formie pracy, w której miałbym kontakt z klientem 1na1, bo na pewno się w niej spełnię. Na początku przyjmowałem to tylko jako komplement, lecz z czasem zacząłem rozumieć, że to naprawdę jest coś, czym chcę się zajmować.`,
     
-    `Instagram stał się nowym miejscem spotkań, a wraz z rozwojem profilu, kontaktowało się ze mną coraz więcej osób. Była to dla mnie dobra wiadomość, lecz dzień nadal miał tylko 24 godziny, więc zaczynało brakować czasu. Mając pracę, pasję, znajomych - stanąłem przed ważnym wyborem: “albo ograniczam relacje z obserwatorami i zajmuję się rozwojem życia dotychczasowego jako trener personalny w branży fitness, albo wchodzę w to całym sobą i rozwijam się profesjonalnie w coachingu”. Jak się domyślasz – wybrałem opcję drugą. Ukończyłem więc szkolenia w oparciu o standardy i kodeks etyczny ICF, uzyskując międzynarodowy tytuł: “Meritum Certified Coach”. Dzięki temu, na co dzień prowadzę sesje online, na których z pomocą narzędzi psychologicznych, przechodzę z klientami przez ważne dla nich tematy życiowe (tzw. life coaching).`,
+    `Instagram stał się nowym miejscem spotkań, a wraz z rozwojem profilu kontaktowało się ze mną coraz więcej osób. Była to dla mnie dobra wiadomość, lecz dzień nadal miał tylko 24 godziny, więc zaczynało brakować czasu. Mając pracę, pasję, znajomych - stanąłem przed ważnym wyborem: “albo ograniczam relacje z obserwatorami i zajmuję się rozwojem życia dotychczasowego jako trener personalny w branży fitness, albo wchodzę w to całym sobą i rozwijam się profesjonalnie w coachingu”. Jak się domyślasz – wybrałem opcję drugą. Ukończyłem więc szkolenia w oparciu o standardy i kodeks etyczny ICF, uzyskując międzynarodowy tytuł: “Meritum Certified Coach”. Dzięki temu, na co dzień prowadzę sesje online, na których z pomocą narzędzi psychologicznych, przechodzę z klientami przez ważne dla nich tematy życiowe (tzw. life coaching).`,
     
     `W międzyczasie działam w branży pisarskiej - jestem autorem wspomnianego wyżej profilu na instagramie oraz ebooków:`,
     ]
@@ -47,11 +47,11 @@ const EBOOKS_DATA = {
     ],
 
     current_offer: "*promocyjna cena z okazji premiery obowiązuje do 30.06.2022",
-    packet: ""
+    packet: "Pakiet 3 e-booków w cenie 99zł!"
 };
 
 const COACHING_DATA = {
-    questions: ["Czym jest coaching?", "Kto może skorzystać z coachingu?", "Dlaczego coaching i dlaczego akurat ja?"],
+    questions: ["Czym jest coaching?", "Kto może skorzystać z sesji?", "Dlaczego coaching i dlaczego akurat ja?"],
     answers: [{
         text: [
         `Coaching jest przemyślanym procesem, bazującym na cyklu odpowiednio prowadzonych rozmów z osobą coachowaną, w celu stworzenia dla niej warunków do indywidualnego rozwoju, świadomych działań nastawionych na rezultaty i trwałych zmian w pożądanym kierunku. To proces auto przywództwa, który umożliwia ludziom uzyskanie świadomości kim są, co robią, dlaczego to robią i gdzie chcą dojść.`,
@@ -98,8 +98,6 @@ const COACHING_DATA = {
     {
         u_list: [
         `Podstawowa różnica między terapią a coachingiem jest taka, że terapia jest przejściem z dysfunkcji do normy, natomiast coaching jest przejściem z normy do skuteczności (w życiu, zawodzie, związku…). Praktyka to coś, co sobie bardzo cenię. Jestem człowiekiem nastawionym na rozwiązania, nie mam tendencji do rozpamiętywania przeszłości, jestem optymistą i znam swoje mocne strony. Mam naturalne predyspozycje do prowadzenia sesji coachingowych i skutecznie się w tym spełniam.`,
-
-        `Wybrałem ten system, dlatego że stosowałem jego narzędzia (na sobie i innych), zanim w ogóle poznałem, czym on jest. Narzędzia te pomogły mi w staniu się tym, kim jestem dzisiaj, dlatego wiem, że system działa i w połączeniu z moimi umiejętnościami, jestem w stanie pomóc też innym w ich drodze do spełnienia.`,
         
         `Wyobraź sobie, że w Twoim życiu wszystko się układa, masz nad wszystkim kontrolę, czujesz się “pełny(a)” i akceptujesz to, kim jesteś oraz jak jest dookoła Ciebie. Każdego dnia budzisz się z uśmiechem i masz chęci do działania. Nawet jeśli jest kilka rzeczy do poprawy, to i tak czujesz, że żyjesz. Tak widzę swoje życie - i Twoje też tak może wyglądać.`,
         

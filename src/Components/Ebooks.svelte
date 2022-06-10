@@ -4,7 +4,8 @@
   import { products } from "../Store/stores";
   import AddRemoveEbook from "./AddRemoveEbook.svelte";
 
-  const { heading, boldheading, u_list, current_offer } = Data.EBOOKS_DATA;
+  const { heading, boldheading, u_list, current_offer, packet } =
+    Data.EBOOKS_DATA;
 
   let items = {};
 
@@ -25,6 +26,7 @@
     </Row>
     <!-- Ebooks info & offer -->
     <Row class="mt-5 text-center">
+      <h6 class="services-title fw-bold mt-4 mb-4">{packet}</h6>
       {#each u_list as item}
         <Col md={4}>
           <div class="services-box text-wrap">

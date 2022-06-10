@@ -1,9 +1,33 @@
 <script>
-  import { Form, Row, Col, Input, Container } from "sveltestrap";
+  import { Row, Col, Input, Container, Button } from "sveltestrap";
   import Data from "../Data/data";
   import { user } from "../Store/stores";
 
   const { description, email_address, phone_nr, instagram } = Data.CONTACT_DATA;
+
+  import { createForm } from "svelte-forms-lib";
+
+  const { form, errors, state, handleChange, handleSubmit } = createForm({
+    initialValues: {
+      name: "",
+      email: "",
+      subject: "",
+      content: "",
+    },
+    validate: (values) => {
+      let errs = {};
+      if (values.name === "") {
+        errs["name"] = "custom validation: name is required";
+      }
+      if (values.email === "") {
+        errs["email"] = "custom validation: email is required";
+      }
+      return errs;
+    },
+    onSubmit: (values) => {
+      alert(JSON.stringify(values));
+    },
+  });
 </script>
 
 <section class="section" id="contact">
@@ -41,7 +65,7 @@
       <!-- end col -->
       <Col lg={8}>
         <div class="custom-form mt-4 pt-4">
-          <Form method="post" name="myForm">
+          <form name="clientForm" on:submit|preventDefault={handleSubmit}>
             <p id="error-msg" />
             <div id="simple-msg" />
             <Row>
@@ -53,7 +77,9 @@
                     type="text"
                     class="form-control"
                     placeholder="Imię*"
-                    bind:value={$user.name}
+                    invalid={$errors.name}
+                    on:change={handleChange}
+                    bind:value={$form.name}
                   />
                 </div>
               </Col>
@@ -63,10 +89,11 @@
                   <Input
                     name="email"
                     id="email"
-                    type="email"
                     class="form-control"
                     placeholder="Adres e-mail*"
-                    bind:value={$user.email}
+                    invalid={$errors.email}
+                    on:change={handleChange}
+                    bind:value={$form.email}
                   />
                 </div>
               </Col>
@@ -82,7 +109,10 @@
                     class="form-control"
                     id="subject"
                     placeholder="Temat wiadomości*"
-                    bind:value={$user.topic}
+                    invalid={$errors.subject}
+                    feedback="To pole jest wymagane"
+                    on:change={handleChange}
+                    bind:value={$form.subject}
                   />
                 </div>
               </Col>
@@ -99,7 +129,10 @@
                     rows={8}
                     class="form-control"
                     placeholder="Treść wiadomości*"
-                    bind:value={$user.message}
+                    invalid={$errors.content}
+                    feedback="To pole jest wymagane"
+                    on:change={handleChange}
+                    bind:value={$form.content}
                   />
                 </div>
               </Col>
@@ -108,18 +141,12 @@
             <!-- end row -->
             <Row>
               <Col lg={12} class="text-end">
-                <Input
-                  type="submit"
-                  id="submit"
-                  name="send"
-                  class="btn-primary"
-                  value="Wyślij Wiadomość"
-                />
+                <Button class="btn-primary">Wyślij wiadomość</Button>
               </Col>
               <!-- end col -->
             </Row>
             <!-- end row -->
-          </Form>
+          </form>
           <!-- end form -->
         </div>
       </Col>

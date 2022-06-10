@@ -6,6 +6,7 @@
   import NavbarShort from "../Components/NavbarShort.svelte";
   import { products } from "../Store/stores";
 
+  let isError = false;
   let items;
   products.subscribe((prods) => {
     console.log(prods);
@@ -13,9 +14,18 @@
   });
 
   const handleClick = async () => {
-    axios.post("https://e6af-176-115-80-91.eu.ngrok.io/transactions", {
-      products: items.map((item) => item.id),
-    });
+    try {
+      const response = await axios.post(
+        "https://d6ab-176-115-80-91.eu.ngrok.io/transactions",
+        {
+          products: items.map((item) => item.id),
+        }
+      );
+      window.location.href = response.data.uri;
+      isError = false;
+    } catch (error) {
+      isError = true;
+    }
   };
 
   $: total = items.reduce(
@@ -50,14 +60,27 @@
         <div
           class="summary-box d-flex justify-content-between align-items-center"
         >
-          <div class="flex-row total">
-            <p class="mt-3 fs-2">
-              <!-- {#if total } -->
+          <div class="d-flex flex-column mt-3 fs-2">
+            {#if items.length === 3}
+              <span class="mt-2 mb-2 fs-6 text-muted"
+                >Uwzględniono promocję pakietu!</span
+              >
+              Razem: <span><s>{total}</s> 99zł</span>
+            {:else}
               Razem: {total + "zł"}
-            </p>
+            {/if}
           </div>
-          <div class="flex-row">
-            <Button class="btn-primary" on:click={handleClick}>Zapłać</Button>
+          <div class="d-flex flex-column align-items-end">
+            <Button
+              class="btn-primary"
+              on:click={handleClick}
+              disabled={items.length === 0}>Zapłać w PayU</Button
+            >
+            <p class="fs-6 text-muted text-center mt-2">
+              {isError
+                ? "Wystąpił problem z płatnością - spróbuj później."
+                : ""}
+            </p>
           </div>
         </div>
       </Row>

@@ -35,7 +35,7 @@
           <div class="container">
             <div class="row justify-content-center">
               {#each answers[0].u_list as item}
-                <Col sm={3}>
+                <Col md={3}>
                   <p class="text-muted text-start max">
                     • {item}
                   </p>
@@ -61,7 +61,7 @@
           <div class="container">
             <div class="row justify-content-center">
               {#each answers[1].u_list as item}
-                <Col sm={3}>
+                <Col md={3}>
                   <p class="text-muted text-start max">
                     • {item}
                   </p>
