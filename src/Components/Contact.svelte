@@ -3,31 +3,51 @@
   import Data from "../Data/data";
   import { user } from "../Store/stores";
 
+  import { axiosInstance } from "../axios";
+
   const { description, email_address, phone_nr, instagram } = Data.CONTACT_DATA;
 
   import { createForm } from "svelte-forms-lib";
 
-  const { form, errors, state, handleChange, handleSubmit } = createForm({
-    initialValues: {
-      name: "",
-      email: "",
-      subject: "",
-      content: "",
-    },
-    validate: (values) => {
-      let errs = {};
-      if (values.name === "") {
-        errs["name"] = "custom validation: name is required";
-      }
-      if (values.email === "") {
-        errs["email"] = "custom validation: email is required";
-      }
-      return errs;
-    },
-    onSubmit: (values) => {
-      alert(JSON.stringify(values));
-    },
-  });
+  let isSuccess = false;
+  let isError = false;
+
+  const { form, errors, state, handleChange, handleSubmit, handleReset } =
+    createForm({
+      initialValues: {
+        name: "",
+        email: "",
+        subject: "",
+        content: "",
+      },
+      validate: (values) => {
+        let errs = {};
+        if (values.name === "") {
+          errs["name"] = "Pole jest wymagane!";
+        }
+        if (values.email === "") {
+          errs["email"] = "Pole jest wymagane!";
+        }
+        if (values.subject === "") {
+          errs["subject"] = "Pole jest wymagane!";
+        }
+        if (values.content === "") {
+          errs["content"] = "Pole jest wymagane!";
+        }
+        return errs;
+      },
+      onSubmit: async (data) => {
+        try {
+          const response = await axiosInstance.post(`form`, data);
+          handleReset();
+          isSuccess = true;
+          isError = false;
+        } catch (error) {
+          isSuccess = false;
+          isError = true;
+        }
+      },
+    });
 </script>
 
 <section class="section" id="contact">
@@ -105,12 +125,10 @@
                 <div class="form-group mt-2">
                   <Input
                     type="text"
-                    multiple
                     class="form-control"
                     id="subject"
                     placeholder="Temat wiadomości*"
                     invalid={$errors.subject}
-                    feedback="To pole jest wymagane"
                     on:change={handleChange}
                     bind:value={$form.subject}
                   />
@@ -124,13 +142,11 @@
                 <div class="form-group mt-2">
                   <Input
                     type="textarea"
-                    name="comments"
-                    id="comments"
+                    id="content"
                     rows={8}
                     class="form-control"
                     placeholder="Treść wiadomości*"
                     invalid={$errors.content}
-                    feedback="To pole jest wymagane"
                     on:change={handleChange}
                     bind:value={$form.content}
                   />
@@ -142,6 +158,12 @@
             <Row>
               <Col lg={12} class="text-end">
                 <Button class="btn-primary">Wyślij wiadomość</Button>
+                <p class="fs-6 text-muted text-end mt-2">
+                  {isError && !isSuccess
+                    ? "Wystąpił błąd, spróbuj później."
+                    : ""}
+                  {isSuccess && !isError ? "Wysłano wiadomość :)" : ""}
+                </p>
               </Col>
               <!-- end col -->
             </Row>

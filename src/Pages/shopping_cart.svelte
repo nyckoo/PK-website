@@ -1,26 +1,22 @@
 <script>
-  import { Link } from "svelte-routing";
-  import axios from "axios";
+  import { axiosInstance } from "../axios";
 
-  import { Form, Input, Label, Container, Row, Col, Button } from "sveltestrap";
+  import { Container, Row, Col, Button } from "sveltestrap";
   import NavbarShort from "../Components/NavbarShort.svelte";
   import { products } from "../Store/stores";
 
-  let isError = false;
   let items;
   products.subscribe((prods) => {
     console.log(prods);
     items = prods;
   });
 
+  let isError = false;
   const handleClick = async () => {
     try {
-      const response = await axios.post(
-        "https://d6ab-176-115-80-91.eu.ngrok.io/transactions",
-        {
-          products: items.map((item) => item.id),
-        }
-      );
+      const response = await axiosInstance.post(`transactions`, {
+        products: items.map((item) => item.id),
+      });
       window.location.href = response.data.uri;
       isError = false;
     } catch (error) {
@@ -42,6 +38,10 @@
       <p class="fs-2">Twój koszyk:</p>
       <Row class="justify-content-start">
         <p class="text-muted">Ilość e-booków do zakupu: {items.length}</p>
+        <p class="text-dark">
+          Uwaga! E-booki zostaną wysłane na e-mail podany po przekierowaniu na
+          PayU.
+        </p>
         {#each items as product}
           <Col md={4} class="p-3 d-flex-column align-items-start">
             <div class="mb-1">
@@ -71,16 +71,16 @@
             {/if}
           </div>
           <div class="d-flex flex-column align-items-end">
+            <p class="fs-6 text-muted text-end p-2">
+              {isError
+                ? "Wystąpił problem z płatnością - spróbuj później."
+                : ""}
+            </p>
             <Button
               class="btn-primary"
               on:click={handleClick}
               disabled={items.length === 0}>Zapłać w PayU</Button
             >
-            <p class="fs-6 text-muted text-center mt-2">
-              {isError
-                ? "Wystąpił problem z płatnością - spróbuj później."
-                : ""}
-            </p>
           </div>
         </div>
       </Row>
