@@ -28,7 +28,7 @@
       </div>
     {:else}
       <div class="bg-white p-4 rounded bg-light text-wrap">
-        <p class="fs-3">Gratulacje! Płatność zrelizowana.</p>
+        <p class="fs-3">Gratulacje! Płatność zrealizowana.</p>
         <p class="fs-5 text-dark">
           Twoje e-booki zostały wysłane na skrzynkę mailową.
         </p>
