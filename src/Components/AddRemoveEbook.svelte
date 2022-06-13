@@ -10,7 +10,6 @@
   class="btn-primary"
   on:click={() => {
     products.update((prevProducts) => {
-      console.log(prevProducts);
       if (prevProducts.map((product) => product.id).includes(item.key)) {
         return prevProducts.filter((product) => product.id !== item.key);
       } else {

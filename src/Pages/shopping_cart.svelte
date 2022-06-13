@@ -7,7 +7,6 @@
 
   let items;
   products.subscribe((prods) => {
-    console.log(prods);
     items = prods;
   });
 
