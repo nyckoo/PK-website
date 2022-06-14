@@ -61,21 +61,25 @@
             </li>
           </ul>
         </div>
-        <!--
+
         <div class="footer-terms">
-          <ul class="mb-0 list-inline text-center mt-4 pt-2">
+          <ul class="mb-0 text-center mt-4 pt-2">
             <li class="list-inline-item">
-              <Link to={"#"} class="text-muted">Terms & Condition</Link>
+              <Link to={"regulamin"} class="text-muted">Regulamin sklepu</Link>
             </li>
             <li class="list-inline-item">
-              <Link to={"#"} class="text-muted">Privacy Policy</Link>
+              <Link to={"polityka-prywatnosci"} class="text-muted"
+                >Polityka prywatności</Link
+              >
             </li>
+            <!--
             <li class="list-inline-item">
               <Link to={"#"} class="text-muted">Contact Us</Link>
             </li>
+             -->
           </ul>
         </div>
-        -->
+
         <div class="mt-5 pt-2 text-center">
           <p class="copy-rights text-muted mb-0">
             {new Date().getFullYear()} © Paweł Kowalski

@@ -4,11 +4,14 @@
   import { Container, Row, Col, Button } from "sveltestrap";
   import NavbarShort from "../Components/NavbarShort.svelte";
   import { products } from "../Store/stores";
+  import { compute_slots } from "svelte/internal";
 
   let items;
   products.subscribe((prods) => {
     items = prods;
   });
+
+  let selected = false;
 
   let isError = false;
   const handleClick = async () => {
@@ -78,11 +81,18 @@
             <Button
               class="btn-primary"
               on:click={handleClick}
-              disabled={items.length === 0}>Zapłać w PayU</Button
+              disabled={items.length === 0 || selected === false}
+              >Zapłać w PayU</Button
             >
           </div>
         </div>
       </Row>
+      <div class="p-2 mt-2 d-flex flex-row-reverse">
+        <label>
+          <input type="radio" bind:group={selected} value="true" /> Akceptuję regulamin
+          sklepu. (*pole obowiązkowe)
+        </label>
+      </div>
     </div>
   </Container>
 </section>
