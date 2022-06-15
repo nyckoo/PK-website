@@ -46,7 +46,7 @@ const EBOOKS_DATA = {
         },
     ],
 
-    current_offer: "*promocyjna cena z okazji premiery obowiązuje do 30.06.2022",
+    current_offer: "*promocyjna cena z okazji premiery obowiązuje do 17.07.2022",
     packet: "Pakiet 3 e-booków w cenie 99zł! - Po dodaniu do koszyka, rabat uwzględni się automatycznie."
 };
 
