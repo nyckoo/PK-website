@@ -2,11 +2,11 @@
   import { Router, Route } from "svelte-routing";
 
   import Layout from "./Pages/Home.svelte";
-  import ShoppingCart from "./Pages/shopping_cart.svelte";
-  import PaymentSummary from "./Pages/payment_summary.svelte";
+  import ShoppingCart from "./Pages/ShoppingCart.svelte";
+  import PaymentSummary from "./Pages/PaymentSummary.svelte";
   import DefaultPage from "./Pages/DefaultPage.svelte";
-  import TermsOfUse from "./Pages/terms_of_use.svelte";
-  import PrivacyPolicy from "./Pages/privacy_policy.svelte";
+  import TermsOfUse from "./Pages/TermsOfUse.svelte";
+  import PrivacyPolicy from "./Pages/PrivacyPolicy.svelte";
 
   export let url = "";
 </script>
