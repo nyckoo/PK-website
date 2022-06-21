@@ -278,7 +278,7 @@
           </form>
           <!-- end form -->
           <p class="text-dark">
-            Uwaga! E-booki zostaną wysłane na e-mail podany w formlarzu.
+            Uwaga! E-booki zostaną wysłane na e-mail podany w formularzu.
           </p>
         </div>
         <div>
