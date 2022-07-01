@@ -1,113 +1,124 @@
 <!-- Navbar component -->
 <script>
-
-  import { scrollto } from 'svelte-scrollto'
-  import { onMount } from 'svelte'
-  import { Button } from "sveltestrap"
-  import { Link } from 'svelte-routing'
+  import { scrollto } from "svelte-scrollto";
+  import { onMount } from "svelte";
+  import { Button } from "sveltestrap";
+  import { Link } from "svelte-routing";
+  import { products } from "../Store/stores";
 
   function windowScroll() {
     const navbar = document.getElementById("navbar");
     if (
-        document.body.scrollTop >= 50 ||
-        document.documentElement.scrollTop >= 50
+      document.body.scrollTop >= 50 ||
+      document.documentElement.scrollTop >= 50
     ) {
-        navbar.classList.add("nav-sticky");
+      navbar?.classList.add("nav-sticky");
     } else {
-        navbar.classList.remove("nav-sticky");
+      navbar?.classList.remove("nav-sticky");
     }
 
-    if (
+    if (!!document.getElementById("back-to-top")) {
+      if (
         document.body.scrollTop > 100 ||
         document.documentElement.scrollTop > 100
-    ) {
-        // document.getElementById("back-to-top").style.display = "inline";
-    } else {
-        // document.getElementById("back-to-top").style.display = "none";
+      ) {
+        document.getElementById("back-to-top").style.display = "inline";
+      } else {
+        document.getElementById("back-to-top").style.display = "none";
+      }
     }
-}
+  }
 
-window.addEventListener('scroll', (ev) => {
+  window.addEventListener("scroll", (ev) => {
     ev.preventDefault();
     windowScroll();
-})
+  });
 
   /**
    * Toggle menu
    */
   const toggleMenu = () => {
-    document.getElementById('navbarCollapse').classList.toggle('show')
-  }
+    document.getElementById("navbarCollapse").classList.toggle("show");
+  };
 
   /**
    * Component mount
    */
   onMount(() => {
-    var section = document.querySelectorAll('.common-section')
+    var section = document.querySelectorAll(".common-section");
 
-    var sections = {}
-    var i = 0
+    var sections = {};
+    var i = 0;
 
     Array.prototype.forEach.call(section, function (e) {
-      sections[e.id] = e.offsetTop
-    })
+      sections[e.id] = e.offsetTop;
+    });
 
     window.onscroll = function () {
       var scrollPosition =
-        document.documentElement.scrollTop || document.body.scrollTop
+        document.documentElement.scrollTop || document.body.scrollTop;
       for (i in sections) {
         if (sections[i] <= scrollPosition) {
-          document.querySelector('.active').setAttribute('class', ' ')
+          document.querySelector(".active").setAttribute("class", " ");
           document
-            .querySelector('a[href*=' + i + ']')
-            .setAttribute('class', 'active')
+            .querySelector("a[href*=" + i + "]")
+            .setAttribute("class", "active");
         }
       }
-    }
-  })
+    };
+  });
 
   /**
    * Scroll method
    */
   const handleScroll = () => {
-    var navbar = document.getElementById('navbar')
+    var navbar = document.getElementById("navbar");
     if (
       document.body.scrollTop > 50 ||
       document.documentElement.scrollTop > 50
     ) {
-      navbar.classList.add('is-sticky')
+      navbar?.classList.add("is-sticky");
     } else {
-      navbar.classList.remove('is-sticky')
+      navbar?.classList.remove("is-sticky");
     }
-  }
+  };
 
-  window.addEventListener('scroll', handleScroll, { passive: false })
+  window.addEventListener("scroll", handleScroll, { passive: false });
 
-  export let extraclass;
-  
+  let itemsCount = 0;
+
+  products.subscribe((items) => {
+    itemsCount = items.length;
+  });
 </script>
 
 <!-- START NAVBAR -->
 <div>
   <nav
-    class={"navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-dark " + extraclass}
+    class={"navbar navbar-expand-lg fixed-top navbar-custom sticky sticky-dark"}
     id="navbar"
   >
     <div class="container">
-      <a class="navbar-brand" href={""}>Najpierw Ja</a>
+      <a class="navbar-brand" href={"/"}>Najpierw Ja</a>
 
-      <ul class="list-inline mb-0" id="navbarIconsCollapsed">
+      <ul class="list-inline m-0" id="navbarIconsCollapsed">
         <li class="list-inline-item">
           <!-- Shopping cart button -->
-          <Button class="navbar-toggler" href={"koszyk"}>
-            <span class="fa-solid fa-cart-shopping" />
-          </Button>
+          <Link to="koszyk">
+            <Button class="navbar-toggler position-relative">
+              <span
+                class="position-absolute translate-middle rounded-3 bg-warning items-amount"
+                >{itemsCount}</span
+              >
+              <div class="fa-solid fa-cart-shopping" />
+            </Button>
+          </Link>
         </li>
 
         <li class="list-inline-item">
           <!-- Menu button -->
           <Button class="navbar-toggler" on:click={toggleMenu}>
-            <span class="fa-solid fa-bars" />
+            <div class="fa-solid fa-bars" />
           </Button>
         </li>
       </ul>
@@ -115,33 +126,41 @@ window.addEventListener('scroll', (ev) => {
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mx-auto" id="navbar-navlist">
           <li class="nav-item">
-            <a class="nav-link" use:scrollto={"#home"} href={"#about"}>O mnie</a>
+            <a class="nav-link" use:scrollto={"#home"} href={"#about"}>O mnie</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link" use:scrollto={"#ebooks"} href={"#ebooks"}>E-booki</a>
+            <a class="nav-link" use:scrollto={"#ebooks"} href={"#ebooks"}
+              >E-booki</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link" use:scrollto={"#coaching"} href={"#coaching"}>Coaching</a>
+            <a class="nav-link" use:scrollto={"#coaching"} href={"#coaching"}
+              >Coaching</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link" use:scrollto={"#contact"} href={"#contact"}>Kontakt</a>
+            <a class="nav-link" use:scrollto={"#contact"} href={"#contact"}
+              >Kontakt</a
+            >
           </li>
         </ul>
         <!-- end ul -->
         <div>
-          <ul class="text-end list-unstyled list-inline mb-0 nav-social">
-            <!--
-            <li class="list-inline-item text-white nav-number">
-              <i class="ti-mobile" /> <span>+1 234 567 789</span>
-            </li>
-            -->
+          <ul class="text-end list-inline mb-0 nav-social">
             <li class="list-inline-item">
               <Link to="koszyk" class="shopping-cart">
-                <i class="fa-solid fa-cart-shopping"></i>
+                <div>
+                  <i class="fa-solid fa-cart-shopping fa-lg" />
+                  <span
+                    class="position-fixed translate-middle rounded-pill bg-warning items-amount"
+                  >
+                    {itemsCount}
+                  </span>
+                </div>
               </Link>
             </li>
           </ul>
-          <!-- end ul -->
         </div>
       </div>
     </div>

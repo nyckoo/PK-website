@@ -19,22 +19,20 @@
       "assets/css/colors/" + color + ".css";
   }
 
-  function scrollNavigation(){
+  function scrollNavigation() {
     if (
       document.body.scrollTop > 100 ||
       document.documentElement.scrollTop > 100
     ) {
-      document.getElementById("back-to-top").style.display = "inline";
+      // document.getElementById("back-to-top").style.display = "inline";
     } else {
-      document.getElementById("back-to-top").style.display = "none";
+      // document.getElementById("back-to-top").style.display = "none";
     }
-  };
+  }
 
   onMount(async () => {
     window.addEventListener("scroll", scrollNavigation, true);
   });
-
-
 </script>
 
 <section class="section footer">
@@ -44,37 +42,44 @@
         <div class="text-center">
           <ul class="list-inline social mb-0">
             <li class="list-inline-item">
-              <a href="https://www.instagram.com/najpierw_ja/" class="social-icon text-muted"
-                ><i class="fa-brands fa-instagram"></i></a
+              <a
+                target="_blank"
+                href="https://instagram.com/najpierw_ja/"
+                class="social-icon text-muted"
+                ><i class="fa-brands fa-instagram" /></a
               >
             </li>
             <li class="list-inline-item">
               <Link to={"#"} class="social-icon text-muted"
-                ><i class="fa-brands fa-facebook"></i></Link
+                ><i class="fa-brands fa-facebook" /></Link
               >
             </li>
             <li class="list-inline-item">
               <Link to={"#"} class="social-icon text-muted"
-                ><i class="fa-brands fa-tiktok"></i></Link
+                ><i class="fa-brands fa-tiktok" /></Link
               >
             </li>
           </ul>
         </div>
-        <!--
+
         <div class="footer-terms">
-          <ul class="mb-0 list-inline text-center mt-4 pt-2">
+          <ul class="mb-0 text-center mt-4 pt-2">
             <li class="list-inline-item">
-              <Link to={"#"} class="text-muted">Terms & Condition</Link>
+              <Link to={"regulamin"} class="text-muted">Regulamin sklepu</Link>
             </li>
             <li class="list-inline-item">
-              <Link to={"#"} class="text-muted">Privacy Policy</Link>
+              <Link to={"polityka-prywatnosci"} class="text-muted"
+                >Polityka prywatności</Link
+              >
             </li>
+            <!--
             <li class="list-inline-item">
               <Link to={"#"} class="text-muted">Contact Us</Link>
             </li>
+             -->
           </ul>
         </div>
-        -->
+
         <div class="mt-5 pt-2 text-center">
           <p class="copy-rights text-muted mb-0">
             {new Date().getFullYear()} © Paweł Kowalski
@@ -89,7 +94,7 @@
 <!-- Back to top -->
 
 <Link to={""} class="back-to-top" id="back-to-top" on:click={scrollTop}>
-  <i class="ti-angle-up" /></Link
+  <i class="fa-solid fa-angle-up" /></Link
 >
 
 <!-- Style switcher
