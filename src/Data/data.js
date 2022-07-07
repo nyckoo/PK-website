@@ -234,7 +234,7 @@ const PRIVACY_POLICY = {
 
     identification_data: {
         list: [
-            "Gromadzenie przez najpierwja.pl danych osobowych umożliwiających identyfikację może odbywać się poprzez pozostawianie komentarzy na blogu oraz za pomocą formularzy, takich jak formularz kontaktowy, a także formularz zamówienia usługi lub produktu elektronicznego. Administrator może gromadzić dane obejmujące imię i nazwisko, numer telefonu i adres e-mail osoby zamawiającej usługę lub produkt elektroniczny, jak i również zostawiającej wiadomość, czy kierującej zapytanie przez formularz zamieszczony na Stronie internetowej.",
+            "Gromadzenie przez najpierwja.pl danych osobowych umożliwiających identyfikację może odbywać się poprzez pozostawianie komentarzy na blogu oraz za pomocą formularzy, takich jak formularz kontaktowy, a także formularz zamówienia usługi lub produktu elektronicznego. Administrator może gromadzić dane obejmujące imię i nazwisko, numer telefonu, adres rozliczeniowy i adres e-mail osoby zamawiającej usługę lub produkt elektroniczny, jak i również zostawiającej wiadomość, czy kierującej zapytanie przez formularz zamieszczony na Stronie internetowej.",
 
             "Przekazanie danych jest dobrowolne, ale jednocześnie konieczne do działania serwisu, a Administrator będzie wykorzystywać uzyskane dane jedynie w celu nawiązania kontaktu z Użytkownikiem, przesyłania mu informacji handlowych, ewentualnie w celu realizacji umowy o dostarczenie usługi lub produktu elektronicznego, zawieranej poprzez złożenie zamówienia, w tym w celu wystawienia i przesłania użytkownikowi faktury VAT dokumentującej zakup. Administrator gwarantuje poufność wszelkich przekazanych mu danych osobowych i nie będzie ich udostępniać podmiotom trzecim.",
 
