@@ -4,17 +4,11 @@ const HOME_DATA = {
 
 const ABOUT_DATA = {
     pretext: "Kim jestem:",
-    text_list: [`Cześć! Nazywam się Paweł Kowalski.`,
+    text_list: [`Nazywam się Paweł Kowalski. Jestem autorem profilu <strong>@najpierw_ja</strong>, na którym obserwuje mnie ponad 20 tys. osób. Codziennie dzielę się praktyczną wiedzą o szczęściu, pewności siebie oraz zdrowych relacjach - właśnie w tych tematach się specjalizuję. Stawiam na autentyczność, dlatego moja osobowość internetowa niewiele różni się od tej z życia prywatnego. Zawsze określam siebie jako osobę szczęśliwą i otwartą na rozmowę. Moim naturalnym talentem jest kontakt z drugim człowiekiem - potrafię każdego dnia poznać kogoś nowego, szczerze się nim zainteresować i przede wszystkim nie oceniać tego jaki jest, ponieważ rozumiem, że każdy ma swoje indywidualne wartości i potrzeby.`,
 
-    `Większość osób kojarzy mnie z social mediów, pod pseudonimem “najpierw ja”. W internecie oraz w życiu prywatnym, określam siebie jako osobę szczęśliwą i otwartą na rozmowę. To mój naturalny talent - potrafię każdego dnia poznać kogoś nowego, szczerze się nim zainteresować i przede wszystkim nie oceniać, ponieważ rozumiem, że każdy ma swoje indywidualne wartości i potrzeby.`,
+    `Z zawodu jestem wykwalifikowanym coachem (ukończyłem szkolenia w oparciu o standardy i kodeks etyczny ICF, uzyskując międzynarodowy tytuł: “Meritum Certified Coach”) oraz prowadzę warsztaty ze “zrozumienia siebie” (pracuję na czterech systemach osobowości - co wyróżnia mnie na runku trenerów mentalnych). Uważam, że wiedza oraz umiejętności to potęga, dlatego codziennie się edukuję, a przez to metoda mojej pracy stale się rozwija.`,
     
-    `Od kiedy założyłem profil <strong>@najpierw_ja</strong>, codziennie dzielę się wiedzą na temat kochania siebie, bliskich relacji, drogi do szczęścia, pewności siebie i spraw biznesowych - to moje główne tematy, w których edukuję się od lat (przede wszystkim w praktyce).`,
-    
-    `Jak to się stało, że robię to, co robię? Czasem mam wrażenie, że nie ja wybrałem tę ścieżkę życia, a to ta ścieżka wybrała mnie - ponieważ zawody które wykonuję, oparte są na moich naturalnych zdolnościach. Zaczęło się lata temu, od zwykłych wyjść na kawę i szczerego dzielenia wnioskami o życiu. Ludzie, z którymi się spotykałem, mówili mi, że taka rozmowa pomaga im poukładać swoje sprawy i powinienem pomyśleć o psychologii, coachingu lub jakiejś innej formie pracy, w której miałbym kontakt z klientem 1na1, bo na pewno się w niej spełnię. Na początku przyjmowałem to tylko jako komplement, lecz z czasem zacząłem rozumieć, że to naprawdę jest coś, czym chcę się zajmować.`,
-    
-    `Instagram stał się nowym miejscem spotkań, a wraz z rozwojem profilu kontaktowało się ze mną coraz więcej osób. Była to dla mnie dobra wiadomość, lecz dzień nadal miał tylko 24 godziny, więc zaczynało brakować czasu. Mając pracę, pasję, znajomych - stanąłem przed ważnym wyborem: “albo ograniczam relacje z obserwatorami i zajmuję się rozwojem życia dotychczasowego jako trener personalny w branży fitness, albo wchodzę w to całym sobą i rozwijam się profesjonalnie w coachingu”. Jak się domyślasz – wybrałem opcję drugą. Ukończyłem więc szkolenia w oparciu o standardy i kodeks etyczny ICF, uzyskując międzynarodowy tytuł: “Meritum Certified Coach”. Dzięki temu, na co dzień prowadzę sesje online, na których z pomocą narzędzi psychologicznych, przechodzę z klientami przez ważne dla nich tematy życiowe (tzw. life coaching).`,
-    
-    `W międzyczasie działam w branży pisarskiej - jestem autorem wspomnianego wyżej profilu na instagramie oraz ebooków:`,
+    `Zawsze ciągnęło mnie do współpracy z ludźmi - wcześniej pracowałem jako trener personalny w branży fitness, jednak o wiele skuteczniej spełniam się w kwestiach mentalnych - stąd zainteresowanie psychologią i coachingiem. W międzyczasie działam w branży pisarskiej, jestem autorem wspomnianego wyżej profilu oraz ebooków:`,
     ]
 };
 
@@ -24,21 +18,21 @@ const EBOOKS_DATA = {
 
     u_list:[{
             key: 1,
-            price: "59zł",
+            price: "79zł",
             title: "“5 warunków idealnego związku”",
             short_description: "<i>(zdrowe relacje, pewność siebie, typy osobowości)</i>",
             description:"Zdania na temat tego co w związku jest najważniejsze, są podzielone. W tej książce nie stosuję podziału na „gorsze/lepsze” warunki, lecz opisuję wszystkie dokładnie z taką samą wartością, by uświadomić czytelnikowi, że nawet połączenie pasującego charakteru z ładną twarzą, nie zawsze wystarcza do zbudowania szczęśliwej relacji. Spełnienie wszystkich 5 warunków sprawia, że relacja zdobywa najniższe prawdopodobieństwo zerwania, a para czuje się ze sobą spełniona.",
             img_name: "5_warunkow_idealnego_zwiazku"
         },{
             key: 2,
-            price: "39zł",
+            price: "49zł",
             title: "“Zrozum siebie”",
             short_description: "<i>(filozofia, pewność siebie, rozwój osobisty)</i>",
             description:"Jesteśmy tym - co myślimy, mówimy, robimy i wszystkim innym, czego doświadczamy. Ta książka pomoże Ci uświadomić sobie, jak bardzo środowisko ma na nas wszystkich wpływ, jak ślepo powtarzamy niektóre czynności i co możemy zrobić, by przejąć nad tym kontrolę. Zrozumienie siebie jest nieodłącznym elementem szczęścia.",
             img_name: "zrozum_siebie"
         },{
             key: 3,
-            price: "19zł",
+            price: "39zł",
             title: "“30 nawyków szczęścia”",
             short_description: "<i>(dobre samopoczucie, rozwój osobisty)</i>",
             description:"Zbiór podstawowych nawyków, które pomogą Ci stać się szczęśliwą osobą. Opanowanie ich poprawia asertywność, pewność siebie, jakość codziennego fukcjonowania i zachęca do spojrzenia na świat z innej perspektywy.",
@@ -46,8 +40,8 @@ const EBOOKS_DATA = {
         },
     ],
 
-    current_offer: "*promocyjna cena z okazji premiery obowiązuje do 17.07.2022",
-    packet: "Pakiet 3 e-booków w cenie 99zł! - Po dodaniu do koszyka, rabat uwzględni się automatycznie."
+    current_offer: "",
+    packet: "Pakiet 3 e-booków w cenie 125zł! - Po dodaniu do koszyka, rabat uwzględni się automatycznie."
 };
 
 const COACHING_DATA = {
@@ -90,8 +84,8 @@ const COACHING_DATA = {
             services: [`- sesje indywidualne (1na1)`, `- w parach (np. ze swoim partnerem)`],
             text_free: "<strong>Wstępna rozmowa - bezpłatna.</strong>",
             text_prices: ["- 1 (pojedyncza) - 150zł",
-                "- 4x (pakiet 4) - 520zł",
-                "- 10x (pakiet 10) - 1200zł"
+                "- 4x (pakiet „w dobrą stronę”) - 520zł",
+                "- 10x (pakiet „całkowita zmiana”) - 1200zł"
             ],
         },
     },
