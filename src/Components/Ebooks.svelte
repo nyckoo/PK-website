@@ -26,7 +26,6 @@
     </Row>
     <!-- Ebooks info & offer -->
     <Row class="mt-5 text-center">
-      <h6 class="services-title fw-bold mt-4 mb-4 p-3">{packet}</h6>
       {#each u_list as item}
         <Col md={4}>
           <div class="services-box text-wrap">
@@ -52,6 +51,7 @@
           </div>
         </Col>
       {/each}
+      <h6 class="services-title fw-bold mt-4 mb-4 p-3">{packet}</h6>
       <!-- <h6 class="services-title fw-bold mt-4 mb-4">{current_offer}</h6> -->
     </Row>
   </Container>
