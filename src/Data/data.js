@@ -4,7 +4,9 @@ const HOME_DATA = {
 
 const ABOUT_DATA = {
     heading: "O mnie",
-    text_list: [`Poszerzanie świadomości, wydobywanie potencjału i skupianie się na rozwiązaniach - to najważniejsze atrybuty mojej pracy. Jestem <strong>wykwalifikowanym coachem</strong> (ukończyłem szkolenia w oparciu o standardy i kodeks etyczny ICF, uzyskując międzynarodowy tytuł: “Meritum Certified Coach”), <strong>certyfikowanym trenerem personalnym</strong> (ze specjalizacją treningów medycznych) oraz <strong>założycielem profilu @najpierw_ja</strong>, na którym obserwuje mnie około 30 tysięcy osób.`,
+    text_list: [`<strong>Paweł Kowalski</strong>`,
+
+        `Poszerzanie świadomości, wydobywanie potencjału i skupianie się na rozwiązaniach - to najważniejsze atrybuty mojej pracy. Jestem <strong>wykwalifikowanym coachem</strong> (ukończyłem szkolenia w oparciu o standardy i kodeks etyczny ICF, uzyskując międzynarodowy tytuł: “Meritum Certified Coach”), <strong>certyfikowanym trenerem personalnym</strong> (ze specjalizacją treningów medycznych) oraz <strong>założycielem profilu @najpierw_ja</strong>, na którym obserwuje mnie około 30 tysięcy osób.`,
 
         `Na co dzień prowadzę sesje coachingowe, szkolenia i warsztaty z zakresu poszerzenia umiejętności interpersonalnych oraz kreowania wizerunku w sieci. Wyróżnia mnie to, że pracuję na kilku systemach osobowości i wykorzystuję wiedzę z branży fitness - łącząc mentalność z fizycznością, co potęguje efektywność zmian. W pracy z ludźmi skupiam się na budowaniu zaufania i indywidualnym podejściu do każdego.`,
 
