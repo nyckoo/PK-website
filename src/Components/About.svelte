@@ -2,7 +2,7 @@
   import { Container, Row, Col } from "sveltestrap";
   import Data from "../Data/data";
 
-  const { heading, boldheading, text_list } = Data.ABOUT_DATA;
+  const { heading, text_list } = Data.ABOUT_DATA;
 </script>
 
 <section class="section" id="about">
@@ -14,7 +14,7 @@
         <h3 class="title">
           {heading}
         </h3>
-        <div class="about-box text-start">
+        <div class="about-box text-start mt-5">
           <!-- Make each piece html customizable -->
           {#each text_list as item}
             <div class="mt-3 ">
