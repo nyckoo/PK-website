@@ -2,7 +2,7 @@
   import { Container, Row, Col } from "sveltestrap";
   import Data from "../Data/data";
 
-  const { pretext, text_list } = Data.ABOUT_DATA;
+  const { heading, boldheading, text_list } = Data.ABOUT_DATA;
 </script>
 
 <section class="section" id="about">
@@ -11,8 +11,8 @@
       <Col lg={12}>
         <!-- Icon/Logo before the header -->
         <i class="fa-solid fa-user-pen title-icon text-dark" />
-        <h3 class="mt-2 title mx-auto mb-5">
-          {pretext}
+        <h3 class="title">
+          {heading}
         </h3>
         <div class="about-box text-start">
           <!-- Make each piece html customizable -->

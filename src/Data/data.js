@@ -3,7 +3,7 @@ const HOME_DATA = {
 }
 
 const ABOUT_DATA = {
-    pretext: "Paweł Kowalski",
+    heading: "O mnie",
     text_list: [`Poszerzanie świadomości, wydobywanie potencjału i skupianie się na rozwiązaniach - to najważniejsze atrybuty mojej pracy. Jestem <strong>wykwalifikowanym coachem</strong> (ukończyłem szkolenia w oparciu o standardy i kodeks etyczny ICF, uzyskując międzynarodowy tytuł: “Meritum Certified Coach”), <strong>certyfikowanym trenerem personalnym</strong> (ze specjalizacją treningów medycznych) oraz <strong>założycielem profilu @najpierw_ja</strong>, na którym obserwuje mnie około 30 tysięcy osób.`,
 
         `Na co dzień prowadzę sesje coachingowe, szkolenia i warsztaty z zakresu poszerzenia umiejętności interpersonalnych oraz kreowania wizerunku w sieci. Wyróżnia mnie to, że pracuję na kilku systemach osobowości i wykorzystuję wiedzę z branży fitness - łącząc mentalność z fizycznością, co potęguje efektywność zmian. W pracy z ludźmi skupiam się na budowaniu zaufania i indywidualnym podejściu do każdego.`,
@@ -15,10 +15,9 @@ const ABOUT_DATA = {
 const EBOOKS_DATA = {
     heading: "Moje",
     boldheading: "E-booki",
-
     u_list: [{
         key: 1,
-        price: "59zł",
+        price: "<s>79</s> → 59zł",
         title: "“5 warunków idealnego związku”",
         short_description: "<i>(zdrowe relacje, pewność siebie, typy osobowości)</i>",
         description: "Związek idealny nie jest związkiem perfekcyjnym w każdym calu - ponieważ takie nie istnieją - tylko relacją odpowiednio dbających o siebie osób. Ludzie nie przygotowują się do bycia z drugą osobą, dlatego dochodzi do tak wielu rozstań. W książce opisuję pięć kluczowych elementów zdrowej relacji, których zastosowanie sprawia, że zdobywa ona najniższe prawdopodobieństwo zerwania, a para czuje się ze sobą spełniona. W rozdziale bonusowym zamieściłem opis typów osobowości oraz narzędzie, którym można sprawdzić siebie i partnera.",
