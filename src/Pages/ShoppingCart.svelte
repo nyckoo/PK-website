@@ -328,7 +328,7 @@
               <span class="mt-2 mb-2 fs-6 text-muted"
                 >Uwzględniono promocję pakietu!</span
               >
-              Razem: <span><s>{total}</s> 99zł</span>
+              Razem: <span><s>{total}</s> 125zł</span>
             {:else}
               Razem: {total + "zł"}
             {/if}

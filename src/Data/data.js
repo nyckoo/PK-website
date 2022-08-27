@@ -3,18 +3,12 @@ const HOME_DATA = {
 }
 
 const ABOUT_DATA = {
-    pretext: "Kim jestem:",
-    text_list: [`Cześć! Nazywam się Paweł Kowalski.`,
+    pretext: "Paweł Kowalski",
+    text_list: [`Poszerzanie świadomości, wydobywanie potencjału i skupianie się na rozwiązaniach - to najważniejsze atrybuty mojej pracy. Jestem <strong>wykwalifikowanym coachem</strong> (ukończyłem szkolenia w oparciu o standardy i kodeks etyczny ICF, uzyskując międzynarodowy tytuł: “Meritum Certified Coach”), <strong>certyfikowanym trenerem personalnym</strong> (ze specjalizacją treningów medycznych) oraz <strong>założycielem profilu @najpierw_ja</strong>, na którym obserwuje mnie około 30 tysięcy osób.`,
 
-    `Większość osób kojarzy mnie z social mediów, pod pseudonimem “najpierw ja”. W internecie oraz w życiu prywatnym, określam siebie jako osobę szczęśliwą i otwartą na rozmowę. To mój naturalny talent - potrafię każdego dnia poznać kogoś nowego, szczerze się nim zainteresować i przede wszystkim nie oceniać, ponieważ rozumiem, że każdy ma swoje indywidualne wartości i potrzeby.`,
-    
-    `Od kiedy założyłem profil <strong>@najpierw_ja</strong>, codziennie dzielę się wiedzą na temat kochania siebie, bliskich relacji, drogi do szczęścia, pewności siebie i spraw biznesowych - to moje główne tematy, w których edukuję się od lat (przede wszystkim w praktyce).`,
-    
-    `Jak to się stało, że robię to, co robię? Czasem mam wrażenie, że nie ja wybrałem tę ścieżkę życia, a to ta ścieżka wybrała mnie - ponieważ zawody które wykonuję, oparte są na moich naturalnych zdolnościach. Zaczęło się lata temu, od zwykłych wyjść na kawę i szczerego dzielenia wnioskami o życiu. Ludzie, z którymi się spotykałem, mówili mi, że taka rozmowa pomaga im poukładać swoje sprawy i powinienem pomyśleć o psychologii, coachingu lub jakiejś innej formie pracy, w której miałbym kontakt z klientem 1na1, bo na pewno się w niej spełnię. Na początku przyjmowałem to tylko jako komplement, lecz z czasem zacząłem rozumieć, że to naprawdę jest coś, czym chcę się zajmować.`,
-    
-    `Instagram stał się nowym miejscem spotkań, a wraz z rozwojem profilu kontaktowało się ze mną coraz więcej osób. Była to dla mnie dobra wiadomość, lecz dzień nadal miał tylko 24 godziny, więc zaczynało brakować czasu. Mając pracę, pasję, znajomych - stanąłem przed ważnym wyborem: “albo ograniczam relacje z obserwatorami i zajmuję się rozwojem życia dotychczasowego jako trener personalny w branży fitness, albo wchodzę w to całym sobą i rozwijam się profesjonalnie w coachingu”. Jak się domyślasz – wybrałem opcję drugą. Ukończyłem więc szkolenia w oparciu o standardy i kodeks etyczny ICF, uzyskując międzynarodowy tytuł: “Meritum Certified Coach”. Dzięki temu, na co dzień prowadzę sesje online, na których z pomocą narzędzi psychologicznych, przechodzę z klientami przez ważne dla nich tematy życiowe (tzw. life coaching).`,
-    
-    `W międzyczasie działam w branży pisarskiej - jestem autorem wspomnianego wyżej profilu na instagramie oraz ebooków:`,
+        `Na co dzień prowadzę sesje coachingowe, szkolenia i warsztaty z zakresu poszerzenia umiejętności interpersonalnych oraz kreowania wizerunku w sieci. Wyróżnia mnie to, że pracuję na kilku systemach osobowości i wykorzystuję wiedzę z branży fitness - łącząc mentalność z fizycznością, co potęguje efektywność zmian. W pracy z ludźmi skupiam się na budowaniu zaufania i indywidualnym podejściu do każdego.`,
+
+        `W międzyczasie działam w branży pisarskiej - jestem autorem wspomnianego wyżej profilu oraz ebooków:`,
     ]
 };
 
@@ -22,55 +16,56 @@ const EBOOKS_DATA = {
     heading: "Moje",
     boldheading: "E-booki",
 
-    u_list:[{
-            key: 1,
-            price: "59zł",
-            title: "“5 warunków idealnego związku”",
-            short_description: "<i>(zdrowe relacje, pewność siebie, typy osobowości)</i>",
-            description:"Zdania na temat tego co w związku jest najważniejsze, są podzielone. W tej książce nie stosuję podziału na „gorsze/lepsze” warunki, lecz opisuję wszystkie dokładnie z taką samą wartością, by uświadomić czytelnikowi, że nawet połączenie pasującego charakteru z ładną twarzą, nie zawsze wystarcza do zbudowania szczęśliwej relacji. Spełnienie wszystkich 5 warunków sprawia, że relacja zdobywa najniższe prawdopodobieństwo zerwania, a para czuje się ze sobą spełniona.",
-            img_name: "5_warunkow_idealnego_zwiazku"
-        },{
-            key: 2,
-            price: "39zł",
-            title: "“Zrozum siebie”",
-            short_description: "<i>(filozofia, pewność siebie, rozwój osobisty)</i>",
-            description:"Jesteśmy tym - co myślimy, mówimy, robimy i wszystkim innym, czego doświadczamy. Ta książka pomoże Ci uświadomić sobie, jak bardzo środowisko ma na nas wszystkich wpływ, jak ślepo powtarzamy niektóre czynności i co możemy zrobić, by przejąć nad tym kontrolę. Zrozumienie siebie jest nieodłącznym elementem szczęścia.",
-            img_name: "zrozum_siebie"
-        },{
-            key: 3,
-            price: "19zł",
-            title: "“30 nawyków szczęścia”",
-            short_description: "<i>(dobre samopoczucie, rozwój osobisty)</i>",
-            description:"Zbiór podstawowych nawyków, które pomogą Ci stać się szczęśliwą osobą. Opanowanie ich poprawia asertywność, pewność siebie, jakość codziennego fukcjonowania i zachęca do spojrzenia na świat z innej perspektywy.",
-            img_name: "30_nawykow_szczescia"
-        },
+    u_list: [{
+        key: 1,
+        price: "59zł",
+        title: "“5 warunków idealnego związku”",
+        short_description: "<i>(zdrowe relacje, pewność siebie, typy osobowości)</i>",
+        description: "Związek idealny nie jest związkiem perfekcyjnym w każdym calu - ponieważ takie nie istnieją - tylko relacją odpowiednio dbających o siebie osób. Ludzie nie przygotowują się do bycia z drugą osobą, dlatego dochodzi do tak wielu rozstań. W książce opisuję pięć kluczowych elementów zdrowej relacji, których zastosowanie sprawia, że zdobywa ona najniższe prawdopodobieństwo zerwania, a para czuje się ze sobą spełniona. W rozdziale bonusowym zamieściłem opis typów osobowości oraz narzędzie, którym można sprawdzić siebie i partnera.",
+        img_name: "5_warunkow_idealnego_zwiazku"
+    }, {
+        key: 2,
+        price: "49zł",
+        title: "“Zrozum siebie”",
+        short_description: "<i>(filozofia, pewność siebie, rozwój osobisty)</i>",
+        description: "Jesteśmy tym - co myślimy, mówimy, robimy i wszystkim innym, czego doświadczamy. Ta książka pomoże Ci uświadomić sobie, jak bardzo środowisko ma na nas wszystkich wpływ, jak ślepo powtarzamy niektóre czynności oraz co możemy zrobić, by przejąć nad tym kontrolę. Zrozumienie siebie jest nieodłącznym elementem szczęścia.",
+        img_name: "zrozum_siebie"
+    }, {
+        key: 3,
+        price: "39zł",
+        title: "“30 nawyków szczęścia”",
+        short_description: "<i>(dobre samopoczucie, asertywność, rozwój osobisty)</i>",
+        description: "Autorski zbiór nawyków/zasad, do których polecam wrócić za każdym razem, kiedy odczujesz osłabienie wewnętrznej radości. Zazwyczaj wystarczy wtedy wyszukać odpowiedni temat i zastosować się do treści. Opanowanie wszystkich nawyków poprawia asertywność, pewność siebie, jakość codziennego funkcjonowania i zachęca do spojrzenia na świat z innej perspektywy.",
+        img_name: "30_nawykow_szczescia"
+    },
     ],
 
-    current_offer: "*promocyjna cena z okazji premiery obowiązuje do 17.07.2022",
-    packet: "Pakiet 3 e-booków w cenie 99zł! - Po dodaniu do koszyka, rabat uwzględni się automatycznie."
+    current_offer: "",
+    packet: "Pakiet 3 e-booków w cenie 125zł! - Po dodaniu do koszyka, rabat uwzględni się automatycznie."
 };
 
 const COACHING_DATA = {
-    questions: ["Czym jest coaching?", "Kto może skorzystać z sesji?", "Dlaczego coaching i dlaczego akurat ja?"],
-    answers: [{
+    titles: ["Czym jest?", "Dla kogo?", "Cennik:"],
+    descriptions: [{
         text: [
-        `Coaching jest przemyślanym procesem, bazującym na cyklu odpowiednio prowadzonych rozmów z osobą coachowaną, w celu stworzenia dla niej warunków do indywidualnego rozwoju, świadomych działań nastawionych na rezultaty i trwałych zmian w pożądanym kierunku. To proces auto przywództwa, który umożliwia ludziom uzyskanie świadomości kim są, co robią, dlaczego to robią i gdzie chcą dojść.`,
+            `Zgodnie z definicją międzynarodowej instytucji International Coaching Federation, jest to <i>“interaktywny proces, który pomaga pojedynczym osobom lub organizacjom w przyspieszeniu tempa rozwoju i polepszeniu efektów działania. Dzięki coachingowi, klienci ustalają konkretniejsze cele, optymalizują swoje działania, podejmują trafniejsze decyzje i pełniej korzystają ze swoich naturalnych umiejętności.”</i>`,
 
-        `Głównym celem coachingu, jest pomoc ludziom w obiektywnym ustaleniu, gdzie znajdują się w chwili obecnej, a gdzie chcą się znaleźć w przyszłości oraz stworzenie planu, który pozwoli im przejść z punktu A do punktu B. Coach nie podejmuje decyzji za osobę coachowaną, lecz korzystając z odpowiednich narzędzi psychologicznych, które pod każdego wybiera indywidualnie (na bazie tego, co usłyszał podczas rozmowy) - wyjmuje z niej to, co najlepsze, by dzięki jej własnym zasobom i wartościom, wypracować postawiony cel.`,
-        
-        `Cechy charakterystyczne coachingu:`,
-        ],
+            `Podstawowa różnica między terapią a coachingiem jest taka, że terapia jest przejściem z dysfunkcji do normy, natomiast coaching jest przejściem z normy do skuteczności (w życiu, zawodzie, związku…). Proces skupia się na rozwiązaniach, a nie na wyszukiwaniu i analizowaniu problemów przeszłości. Głównym celem jest pomoc ludziom w obiektywnym ustaleniu, gdzie znajdują się w chwili obecnej, a gdzie chcą się znaleźć w przyszłości oraz stworzenie planu, który pozwoli im przejść z punktu A do punktu B.`,
 
-        u_list: [
-        "dokonuje się w atmosferze szacunku i pełnej akceptacji dla wartości klienta",
-        "pomaga ludziom uczyć się, a nie jest po to, by ich uczyć",
-        "wyklucza jakąkolwiek dyrektywność ze strony coacha",
-        "prowadzi do świadomego dokonywania zmian",
-        "jest zbudowany na bazie pytań",
-        "skupia się na osiąganiu celów",
-        "pobudza do myślenia",
-        "jest dobrowolny"
+            `Wykwalifikowany coach słucha, obserwuje i indywidualnie dopasowuje swoje podejście do poszczególnych potrzeb klienta, wydobywając z niego potencjał, zwalniając blokady i wzmacniając mocne strony - by na jego osobistych wartościach, pomóc wypracować drogę do wyznaczonego celu.`,
         ]
+        /*
+        u_list: [
+            "dokonuje się w atmosferze szacunku i pełnej akceptacji dla wartości klienta",
+            "pomaga ludziom uczyć się, a nie jest po to, by ich uczyć",
+            "wyklucza jakąkolwiek dyrektywność ze strony coacha",
+            "prowadzi do świadomego dokonywania zmian",
+            "jest zbudowany na bazie pytań",
+            "skupia się na osiąganiu celów",
+            "pobudza do myślenia",
+            "jest dobrowolny"
+        ]
+        */
     },
     {
         text_one: `Coaching zaczyna się tam, gdzie pojawia się potrzeba zmiany. Zatem każdy może zapisać się na taką sesję. Najczęściej jednak pracuję z osobami, które:`,
@@ -83,30 +78,15 @@ const COACHING_DATA = {
             "chcą na nowo zacząć żyć po rozstaniu z partnerem",
             "chcą poprawić relację z partnerem, rodziną lub pracownikami",
             "chcą poprawić jakość swojego życia lub rozwinąć się w jakiejś dziedzinie, na przykład rozwinąć w sobie pewność siebie, asertywność, miłość, cierpliwość i wiele innych…"
-            ],
-        text_two: `Coaching jest dosłownie dla każdej osoby, która pragnie choć najmniejszej zmiany w swoim życiu. Ty decydujesz o temacie sesji i tym, czego tak naprawdę chcesz dla siebie. Podczas sesji, w każdej chwili możesz przerwać temat lub go zmienić. Nawet jeśli nie wiesz o czym chcesz porozmawiać - coaching ma na to sposób (dzięki psychologicznym narzędziom, bardzo szybko pomogę Ci odnaleźć się w Twoich myślach).`,
-        offer_text: ["Dostępne są:", "Cennik sesji online:"],
-        offer: {
-            services: [`- sesje indywidualne (1na1)`, `- w parach (np. ze swoim partnerem)`],
-            text_free: "<strong>Wstępna rozmowa - bezpłatna.</strong>",
-            text_prices: ["- 1 (pojedyncza) - 150zł",
-                "- 4x (pakiet 4) - 520zł",
-                "- 10x (pakiet 10) - 1200zł"
-            ],
-        },
+        ],
+        text_two: `Teoria i praktyka pokazały mi, że ludzie doskonale wiedzą czego potrzebują, lecz przez różne bariery i konflikty wewnętrzne, nie są w stanie usłyszeć swojej intuicji. Dysponuję narzędziami, które pomagają rozwiązać to nieporozumienie.`,
+        offer_text: `<strong>Skontaktuj się ze mną</strong> i skorzystaj z darmowej konsultacji, na której opowiesz mi dlaczego się do mnie zgłaszasz, jaki efekt chciałbyś/chciałabyś uzyskać podczas współpracy, a następnie odpowiem na Twoje pytania i ustalimy plan działania. Rozmowa trwa 15-20 minut, odbywa się przez telefon/whatsappa.`,
     },
     {
-        u_list: [
-        `Podstawowa różnica między terapią a coachingiem jest taka, że terapia jest przejściem z dysfunkcji do normy, natomiast coaching jest przejściem z normy do skuteczności (w życiu, zawodzie, związku…). Praktyka to coś, co sobie bardzo cenię. Jestem człowiekiem nastawionym na rozwiązania, nie mam tendencji do rozpamiętywania przeszłości, jestem optymistą i znam swoje mocne strony. Mam naturalne predyspozycje do prowadzenia sesji coachingowych i skutecznie się w tym spełniam.`,
-        
-        `Wyobraź sobie, że w Twoim życiu wszystko się układa, masz nad wszystkim kontrolę, czujesz się “pełny(a)” i akceptujesz to, kim jesteś oraz jak jest dookoła Ciebie. Każdego dnia budzisz się z uśmiechem i masz chęci do działania. Nawet jeśli jest kilka rzeczy do poprawy, to i tak czujesz, że żyjesz. Tak widzę swoje życie - i Twoje też tak może wyglądać.`,
-        
-        `Według mnie, praca, która jakkolwiek wpływa na nas toksycznie, nie jest warta żadnego czasu. Nic też nie jest warty związek, w którym zamiast przyjaźni, występuje wrogość i częste kłótnie. Żadna minuta nie jest warta pesymizmu, który utrzymuje nas z dala od radości. By móc zbudować sobie lepsze życie, lepszą rzeczywistość, potrzebujemy uporządkować aktualne sprawy, wzmocnić poczucie własnej wartości, stać się asertywnym i pewnym siebie człowiekiem oraz nauczyć się życzliwości - to wszystko prezentuję w swoim życiu prywatnym, więc nie umawiasz się z teoretykiem, lecz kimś, kto w praktyce wyznaje wartości człowieka szczęśliwego. Poprawiając jedną sferę życia, wpływa ona na kilka innych - jestem kimś, kto doskonale rozumie tę regułę i pomagam wdrażać to w codzienność moich klientów. Z odpowiednim nastawieniem i cierpliwością w sercu, możesz zbudować swoją lepszą rzeczywistość - a coaching jest do tego najlepszym narzędziem.`,
-
-        `<i>“Mała szansa na osiągnięcie celu, nie powinna zniechęcać do podjęcia próby”.</i>`,
-        
-        `Zapraszam Cię do skorzystania z oferty - jestem pewny, że tak jak moi dotychczasowi klienci, już po dwóch-trzech spotkaniach dostrzeżesz znaczną różnicę (niektórzy nawet po jednej sesji osiągają swój cel). A jeśli nigdy nie pracowałeś/aś w coachingu i masz wątpliwości - skontaktuj się ze mną i skorzystaj ze wstępnej, całkowicie darmowej konsultacji. Porozmawiamy o Twoich potrzebach, oczekiwaniach i odpowiem na pytania.`,
-        ],
+        offer: {
+            services: [`- Wstępna konsultacja: <i>bezpłatna</i>`, `- Sesja indywidualna: 150-200zł`, `- Konsultacja trenerska: 70zł`],
+            for_businesses: [`<strong>Dla firm:</strong>`, `- Ofertę firmową przesyłam oddzielnie, na adres mailowy, po uprzednim kontakcie ze mną.`],
+        },
     },
     ]
 }
@@ -120,8 +100,8 @@ const CONTACT_DATA = {
 
 const TERMS_OF_USE = {
     definitions: {
-        desc : "Przyjmuje się następujące znaczenia definicji, użytych na potrzeby niniejszego regulaminu:",
-        list : [
+        desc: "Przyjmuje się następujące znaczenia definicji, użytych na potrzeby niniejszego regulaminu:",
+        list: [
             "Regulamin – zawarty w poniższej treści zbiór zasad dotyczących sprzedaży Usług Coachingowych oraz Produktów opisanych szczegółowo w pkt. 4 poniżej.",
 
             "Serwis – realizowanie przez Administratora transakcji online w zakresie świadczenia Usług Coachingowych stacjonarnych i online oraz Produktów udostępnionych odbiorcy na łamach strony internetowej dostępnej pod adresem https://najpierwja.pl/.",
@@ -168,7 +148,7 @@ const TERMS_OF_USE = {
         ],
 
         coaching_payment_info: "Płatności za usługi coachingowe można również dokonać poprzez przelew odpowiedniej kwoty na numer bankowy: 47 1140 2004 0000 3802 8169 7698 pod nazwą “Paweł Kowalski” i dowolnym tytułem przelewu (proponowany: “coaching” lub w przypadku pakietu: “coaching pakiet”) lub BLIK na numer telefonu 690939066 z tymi samymi danymi.",
-        
+
         coaching_payment_addition: "W przypadku, gdy użytkownik dokonał płatności za usługi coachingowe, (sesję lub pakiet sesji), właściciel serwisu skontaktuje się z nim w ciągu 24h od momentu skutecznego dokonania płatności, w celu ustalenia terminu sesji, a w przypadku pakietu – w celu ustalenia terminu pierwszej sesji."
     },
 
@@ -241,7 +221,7 @@ const PRIVACY_POLICY = {
             "Administrator oświadcza, że dane osobowe gromadzone są z należytą starannością i odpowiednio chronione przed dostępem do nich osób do tego nieupoważnionych.",
 
             "Twoje dane osobowe mogą być przetwarzane przez podmioty, z których usług korzystamy. Mogą mieć dostęp do Twoich danych osobowych, jeżeli świadczone przez nich usługi wiążą się lub mogą wiązać z przetwarzaniem danych osobowych, jeżeli będą świadczyć usługi w zakresie związanym z takim dostępem. Chodzi w szczególności o podmioty takie jak hostingodawca, dostawcy usług poczty elektronicznej, podmiot świadczący usługi w zakresie obsługi technicznej strony internetowej, kancelarie prawne, podmioty świadczące usługi marketingowe, biura rachunkowe, dostawcy oprogramowania chmurowego itp. Pamiętaj, że Twoje dane są bezpieczne i przetwarzane jedynie w niezbędnym zakresie. Ponadto, w razie zaistnienia takiej konieczności, Twoje dane osobowe mogą być udostępniane podmiotom, organom lub instytucjom uprawnionym do uzyskania dostępu do danych na podstawie przepisów prawa, takim jak służby policyjne, bezpieczeństwa, sądy, prokuratury, a także urzędom skarbowym w zakresie niezbędnym do realizacji obowiązków podatkowo-rozliczeniowo-księgowych.",
-        
+
             "Administrator informuje niniejszym Użytkownika, że powierza przetwarzanie danych osobowych następującym podmiotom:"
         ],
 
