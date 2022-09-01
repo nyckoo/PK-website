@@ -19,13 +19,15 @@ const EBOOKS_DATA = {
     boldheading: "E-booki",
     u_list: [{
         key: 1,
-        price: "<s>79</s> → 59zł",
+        old_price: "<s>79</s> → ",
+        price: "59zł",
         title: "“5 warunków idealnego związku”",
         short_description: "<i>(zdrowe relacje, pewność siebie, typy osobowości)</i>",
         description: "Związek idealny nie jest związkiem perfekcyjnym w każdym calu - ponieważ takie nie istnieją - tylko relacją odpowiednio dbających o siebie osób. Ludzie nie przygotowują się do bycia z drugą osobą, dlatego dochodzi do tak wielu rozstań. W książce opisuję pięć kluczowych elementów zdrowej relacji, których zastosowanie sprawia, że zdobywa ona najniższe prawdopodobieństwo zerwania, a para czuje się ze sobą spełniona. W rozdziale bonusowym zamieściłem opis typów osobowości oraz narzędzie, którym można sprawdzić siebie i partnera.",
         img_name: "5_warunkow_idealnego_zwiazku"
     }, {
         key: 2,
+        old_price: "",
         price: "49zł",
         title: "“Zrozum siebie”",
         short_description: "<i>(filozofia, pewność siebie, rozwój osobisty)</i>",
@@ -33,6 +35,7 @@ const EBOOKS_DATA = {
         img_name: "zrozum_siebie"
     }, {
         key: 3,
+        old_price: "",
         price: "39zł",
         title: "“30 nawyków szczęścia”",
         short_description: "<i>(dobre samopoczucie, asertywność, rozwój osobisty)</i>",
@@ -41,8 +44,8 @@ const EBOOKS_DATA = {
     },
     ],
 
-    current_offer: "",
-    packet: "Pakiet 3 e-booków w cenie 125zł! - Po dodaniu do koszyka, rabat uwzględni się automatycznie."
+    current_offer: "Promocja ograniczona czasowo do 04.09.2022",
+    packet: "Pakiet 3 e-booków w cenie <s>125</s> 99zł! - Po dodaniu do koszyka, rabat uwzględni się automatycznie."
 };
 
 const COACHING_DATA = {

@@ -37,7 +37,7 @@
               />
               <h5 class="services-title fw-bold mt-5 mb-4">{item.title}</h5>
               <h6 class="services-subtitle text-dark fw-bold mb-4">
-                {@html item.price}
+                {@html item.old_price}{item.price}
               </h6>
               <!-- Button Add/Remove Item -->
               <AddRemoveEbook {item} {items} />
@@ -51,8 +51,8 @@
           </div>
         </Col>
       {/each}
-      <h6 class="services-title fw-bold mt-4 mb-4 p-3">{packet}</h6>
-      <!-- <h6 class="services-title fw-bold mt-4 mb-4">{current_offer}</h6> -->
+      <h6 class="services-title fw-bold mt-4 mb-4 p-3">{@html packet}</h6>
+      <h6 class="services-title fw-bold mt-4 mb-4">{current_offer}</h6>
     </Row>
   </Container>
 </section>
