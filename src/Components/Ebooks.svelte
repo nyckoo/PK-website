@@ -51,8 +51,8 @@
           </div>
         </Col>
       {/each}
-      <h6 class="services-title fw-bold mt-4 mb-4 p-3">{@html packet}</h6>
-      <h6 class="services-title fw-bold mt-4 mb-4">{current_offer}</h6>
+      <h6 class="services-title fw-bold mt-4 mb-4 p-3">{packet}</h6>
+      <!-- <h6 class="services-title fw-bold mt-4 mb-4">{current_offer}</h6> -->
     </Row>
   </Container>
 </section>

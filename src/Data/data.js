@@ -45,7 +45,7 @@ const EBOOKS_DATA = {
     ],
 
     current_offer: "Promocja ograniczona czasowo do 04.09.2022",
-    packet: "Pakiet 3 e-booków w cenie <s>125</s> 99zł! - Po dodaniu do koszyka, rabat uwzględni się automatycznie."
+    packet: "Pakiet 3 e-booków w cenie 115zł! - Po dodaniu do koszyka, rabat uwzględni się automatycznie."
 };
 
 const COACHING_DATA = {
