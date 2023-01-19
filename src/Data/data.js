@@ -19,7 +19,7 @@ const EBOOKS_DATA = {
     boldheading: "E-booki",
     u_list: [{
         key: 1,
-        old_price: "<s>79</s> → ",
+        // old_price: "<s>/s> → ",
         price: "59zł",
         title: "“5 warunków idealnego związku”",
         short_description: "<i>(zdrowe relacje, pewność siebie, typy osobowości)</i>",
@@ -27,7 +27,7 @@ const EBOOKS_DATA = {
         img_name: "5_warunkow_idealnego_zwiazku"
     }, {
         key: 2,
-        old_price: "",
+        // old_price: "",
         price: "49zł",
         title: "“Zrozum siebie”",
         short_description: "<i>(filozofia, pewność siebie, rozwój osobisty)</i>",
@@ -35,7 +35,7 @@ const EBOOKS_DATA = {
         img_name: "zrozum_siebie"
     }, {
         key: 3,
-        old_price: "",
+        // old_price: "",
         price: "39zł",
         title: "“30 nawyków szczęścia”",
         short_description: "<i>(dobre samopoczucie, asertywność, rozwój osobisty)</i>",
@@ -58,18 +58,6 @@ const COACHING_DATA = {
 
             `Wykwalifikowany coach słucha, obserwuje i indywidualnie dopasowuje swoje podejście do poszczególnych potrzeb klienta, wydobywając z niego potencjał, zwalniając blokady i wzmacniając mocne strony - by na jego osobistych wartościach, pomóc wypracować drogę do wyznaczonego celu.`,
         ]
-        /*
-        u_list: [
-            "dokonuje się w atmosferze szacunku i pełnej akceptacji dla wartości klienta",
-            "pomaga ludziom uczyć się, a nie jest po to, by ich uczyć",
-            "wyklucza jakąkolwiek dyrektywność ze strony coacha",
-            "prowadzi do świadomego dokonywania zmian",
-            "jest zbudowany na bazie pytań",
-            "skupia się na osiąganiu celów",
-            "pobudza do myślenia",
-            "jest dobrowolny"
-        ]
-        */
     },
     {
         text_one: `Coaching zaczyna się tam, gdzie pojawia się potrzeba zmiany. Zatem każdy może zapisać się na taką sesję. Najczęściej jednak pracuję z osobami, które:`,

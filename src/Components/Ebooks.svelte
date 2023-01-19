@@ -37,7 +37,7 @@
               />
               <h5 class="services-title fw-bold mt-5 mb-4">{item.title}</h5>
               <h6 class="services-subtitle text-dark fw-bold mb-4">
-                {@html item.old_price}{item.price}
+                {item.price}
               </h6>
               <!-- Button Add/Remove Item -->
               <AddRemoveEbook {item} {items} />
