@@ -6,9 +6,9 @@ const ABOUT_DATA = {
     heading: "O mnie",
     text_list: [`<strong>Paweł Kowalski</strong>`,
 
-        `Poszerzanie świadomości, wydobywanie potencjału i skupianie się na rozwiązaniach - to najważniejsze atrybuty mojej pracy. Jestem <strong>wykwalifikowanym coachem</strong> (ukończyłem szkolenia w oparciu o standardy i kodeks etyczny ICF, uzyskując międzynarodowy tytuł: “Meritum Certified Coach”), <strong>certyfikowanym trenerem personalnym</strong> (ze specjalizacją treningów medycznych) oraz <strong>założycielem profilu @najpierw_ja</strong>, na którym obserwuje mnie około 30 tysięcy osób.`,
+        `Jestem <strong>autorem profilu @najpierw_ja</strong> na instagramie, na którym obserwuje mnie ponad 70 tysięcy osób oraz podcastu “najpierw_podcast” na Spotify. Na co dzień prowadzę sesje indywidualne online - jestem <strong>wykwalifikowanym life coachem</strong> (ukończyłem szkolenia w oparciu o standardy i kodeks etyczny ICF, uzyskując międzynarodowy tytuł: “Meritum Certified Coach”), a także <strong>certyfikowanym trenerem personalnym</strong> (ze specjalizacją treningów medycznych). Mam doświadczenie w pomaganiu mentalnym i fizycznym. Mogę śmiało stwierdzić, że zawód jest moją pasją, a nawet że jestem swoim własnym zawodem, ponieważ umiejętności coachingowe mocno współgrają z moją osobowością i czuję, że inspirowanie innych, to moja życiowa droga. To wzmacnia efekty sesji, a samo spotkanie nie jest automatyczne i sztywne. Liczy się dla mnie indywidualne podejście, zaufanie i empatia.`,
 
-        `Na co dzień prowadzę sesje coachingowe, szkolenia i warsztaty z zakresu poszerzenia umiejętności interpersonalnych oraz kreowania wizerunku w sieci. Wyróżnia mnie to, że pracuję na kilku systemach osobowości i wykorzystuję wiedzę z branży fitness - łącząc mentalność z fizycznością, co potęguje efektywność zmian. W pracy z ludźmi skupiam się na budowaniu zaufania i indywidualnym podejściu do każdego.`,
+        `Najważniejsze atrybuty mojej pracy to: <strong>poszerzanie świadomości</strong> (wyjdziesz z myślenia jednotorowego, otworzysz się na zupełnie nowe perspektywy oraz pozbędziesz się napięć), <strong>wydobywanie potencjału</strong> (zajrzysz w siebie, poznasz swoje mocne strony i nauczysz się nimi zarządzać) oraz <strong>skupianie się na rozwiązaniach</strong> (dobrze jest zrozumieć problem, ale jeszcze lepiej jest znaleźć na niego sposób). Wykorzystuję wiedzę z zakresu osobowości człowieka oraz wschodniego podejścia do życia - co potęguje efektywność zmian.`,
 
         `W międzyczasie działam w branży pisarskiej - jestem autorem wspomnianego wyżej profilu oraz ebooków:`,
     ]
@@ -54,7 +54,7 @@ const COACHING_DATA = {
         text: [
             `Zgodnie z definicją międzynarodowej instytucji International Coaching Federation, jest to <i>“interaktywny proces, który pomaga pojedynczym osobom lub organizacjom w przyspieszeniu tempa rozwoju i polepszeniu efektów działania. Dzięki coachingowi, klienci ustalają konkretniejsze cele, optymalizują swoje działania, podejmują trafniejsze decyzje i pełniej korzystają ze swoich naturalnych umiejętności.”</i>`,
 
-            `Podstawowa różnica między terapią a coachingiem jest taka, że terapia jest przejściem z dysfunkcji do normy, natomiast coaching jest przejściem z normy do skuteczności (w życiu, zawodzie, związku…). Proces skupia się na rozwiązaniach, a nie na wyszukiwaniu i analizowaniu problemów przeszłości. Głównym celem jest pomoc ludziom w obiektywnym ustaleniu, gdzie znajdują się w chwili obecnej, a gdzie chcą się znaleźć w przyszłości oraz stworzenie planu, który pozwoli im przejść z punktu A do punktu B.`,
+            `<strong>Podstawowa różnica między terapią a coachingiem jest taka, że terapia jest przejściem z dysfunkcji do normy, natomiast coaching jest przejściem z normy do skuteczności (w życiu, zawodzie, związku…).</strong> Proces skupia się na rozwiązaniach, a nie na wyszukiwaniu i analizowaniu problemów przeszłości. Głównym celem jest pomoc ludziom w obiektywnym ustaleniu, gdzie znajdują się w chwili obecnej, a gdzie chcą się znaleźć w przyszłości oraz stworzenie planu, który pozwoli im przejść z punktu A do punktu B.`,
 
             `Wykwalifikowany coach słucha, obserwuje i indywidualnie dopasowuje swoje podejście do poszczególnych potrzeb klienta, wydobywając z niego potencjał, zwalniając blokady i wzmacniając mocne strony - by na jego osobistych wartościach, pomóc wypracować drogę do wyznaczonego celu.`,
         ]
@@ -76,8 +76,8 @@ const COACHING_DATA = {
     },
     {
         offer: {
-            services: [`- Wstępna konsultacja: <i>bezpłatna</i>`, `- Sesja indywidualna: 150-200zł`, `- Konsultacja trenerska: 70zł`],
-            for_businesses: [`<strong>Dla firm:</strong>`, `- Ofertę firmową przesyłam oddzielnie, na adres mailowy, po uprzednim kontakcie ze mną.`],
+            services: [`- Wstępna konsultacja: <i>bezpłatna</i>`, `- Sesja indywidualna: 150-200zł`],
+            for_businesses: [`<strong>Dla firm:</strong>`, `Oferta coachingu indywidualnego / grupowego dopasowana do potrzeb firmy, po uprzednim kontakcie ze mną`],
         },
     },
     ]

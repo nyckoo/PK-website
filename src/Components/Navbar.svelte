@@ -99,7 +99,9 @@
     id="navbar"
   >
     <div class="container">
-      <a class="navbar-brand" href={"/"}>Najpierw Ja</a>
+      <Link to="home">
+        <p class="navbar-brand">Najpierw Ja</p>
+      </Link>
 
       <ul class="list-inline m-0" id="navbarIconsCollapsed">
         <li class="list-inline-item">

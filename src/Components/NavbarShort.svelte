@@ -74,7 +74,9 @@
     id="navbar"
   >
     <div class="container" id="navbarIconsCollapsed">
-      <a class="navbar-brand" href={"/"}>Najpierw Ja</a>
+      <Link to="home">
+        <p class="navbar-brand">Najpierw Ja</p>
+      </Link>
     </div>
   </nav>
 </div>

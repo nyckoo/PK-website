@@ -7,12 +7,15 @@
   import DefaultPage from "./Pages/DefaultPage.svelte";
   import TermsOfUse from "./Pages/TermsOfUse.svelte";
   import PrivacyPolicy from "./Pages/PrivacyPolicy.svelte";
-
+  import CookieBanner from "./Components/CookieBanner.svelte";
   export let url = "";
 </script>
 
 <Router {url}>
   <div>
+    <!-- COOKIES ALERT -->
+    <CookieBanner />
+    <!-- COOKIES ALERT -->
     <Route><DefaultPage /></Route>
     <Route path="/"><Layout /></Route>
     <Route path="/koszyk"><ShoppingCart /></Route>
